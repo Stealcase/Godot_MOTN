@@ -9,24 +9,19 @@ const TILE_SIZE = 32
 var _pixels_per_second: float = 2 * TILE_SIZE
 var _step_size: float = 1 / _pixels_per_second
 
-var direction = Vector2.ZERO
-var player_input = Vector2.ZERO
 # Count movement progress in distinct integer steps
 var _pixels_moved: int = 0
 
 
 # Accumulator of deltas, aka fractions of seconds, to time movement. 
 var _step: float = 0 
+
+var direction = Vector2.ZERO
 var _is_move_input: bool = false
 
-func _process(delta: float):
-	player_input.x = Input.get_axis("move_left", "move_right")
-	player_input.y = Input.get_axis("move_up", "move_down")
-#	if player_input != Vector2.ZERO:
-#		player_input = player_input.normalized()
-	direction = player_input.normalized()
-	#Are we moving?
-	_is_move_input = player_input != Vector2.ZERO
+func receive_input(dir: Vector2, is_moving: bool):
+	direction = dir
+	_is_move_input = is_moving
 
 func _physics_process(delta: float):
 	if not _is_move_input: return
