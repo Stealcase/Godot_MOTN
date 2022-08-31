@@ -3,6 +3,10 @@
 .import/
 export.cfg
 export_presets.cfg
-
+.godot/imported/
+.godot/editor/
+.godot/shader_cache/
+.godot/.gdignore
+.godot/uid_cache.bin
 # Mono-specific ignores
 .mono/
