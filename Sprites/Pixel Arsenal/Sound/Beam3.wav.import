@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bhxm7b5727tfd"
+path="res://.godot/imported/Beam3.wav-9907191b672aa38fc5809426cfaf8497.sample"
+
+[deps]
+
+source_file="res://Sprites/Pixel Arsenal/Sound/Beam3.wav"
+dest_files=["res://.godot/imported/Beam3.wav-9907191b672aa38fc5809426cfaf8497.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

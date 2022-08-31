@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://boavwpctdf7xx"
+path="res://.godot/imported/FireWeak1.wav-711ab430e93b1ac4853bb41a52c4ed24.sample"
+
+[deps]
+
+source_file="res://Sprites/Pixel Arsenal/Sound/FireWeak1.wav"
+dest_files=["res://.godot/imported/FireWeak1.wav-711ab430e93b1ac4853bb41a52c4ed24.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

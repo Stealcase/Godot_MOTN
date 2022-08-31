@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dfflimloqps75"
+path="res://.godot/imported/Electric2.wav-eb9a5a304a30fff2e7c504efe33a8a0b.sample"
+
+[deps]
+
+source_file="res://Sprites/Pixel Arsenal/Sound/Electric2.wav"
+dest_files=["res://.godot/imported/Electric2.wav-eb9a5a304a30fff2e7c504efe33a8a0b.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

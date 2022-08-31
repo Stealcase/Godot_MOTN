@@ -1,0 +1,26 @@
+{
+    "frames": [
+        {
+            "filename": "B_SpeedBirb_mon.aseprite",
+            "frame": {
+                "x": 0,
+                "y": 56,
+                "w": 56,
+                "h": 56
+            }
+        }
+    ],
+    "meta": {
+        "monsterGameFormat": true,
+        "app": "http://www.aseprite.org/",
+        "version": "1.2.27-x64",
+        "image": "B_SpeedBirb_mon.png",
+        "size": {
+            "x": 0,
+            "y": 0,
+            "w": 56,
+            "h": 56
+        },
+        "frameTags": []
+    }
+}

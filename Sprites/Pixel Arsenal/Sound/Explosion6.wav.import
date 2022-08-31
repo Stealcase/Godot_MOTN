@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dhchr2jkm1ur0"
+path="res://.godot/imported/Explosion6.wav-169b2c337fe9f80fc512b98388db8c82.sample"
+
+[deps]
+
+source_file="res://Sprites/Pixel Arsenal/Sound/Explosion6.wav"
+dest_files=["res://.godot/imported/Explosion6.wav-169b2c337fe9f80fc512b98388db8c82.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

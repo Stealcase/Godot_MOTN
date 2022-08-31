@@ -1,0 +1,273 @@
+{
+    "frames": [
+        {
+            "filename": "B_SnekSnek_mon 0.aseprite",
+            "frame": {
+                "x": 0,
+                "y": 240,
+                "w": 48,
+                "h": 48
+            }
+        },
+        {
+            "filename": "B_SnekSnek_mon 1.aseprite",
+            "frame": {
+                "x": 48,
+                "y": 240,
+                "w": 48,
+                "h": 48
+            }
+        },
+        {
+            "filename": "B_SnekSnek_mon 2.aseprite",
+            "frame": {
+                "x": 96,
+                "y": 240,
+                "w": 48,
+                "h": 48
+            }
+        },
+        {
+            "filename": "B_SnekSnek_mon 3.aseprite",
+            "frame": {
+                "x": 144,
+                "y": 240,
+                "w": 48,
+                "h": 48
+            }
+        },
+        {
+            "filename": "B_SnekSnek_mon 4.aseprite",
+            "frame": {
+                "x": 192,
+                "y": 240,
+                "w": 48,
+                "h": 48
+            }
+        },
+        {
+            "filename": "B_SnekSnek_mon 5.aseprite",
+            "frame": {
+                "x": 240,
+                "y": 240,
+                "w": 48,
+                "h": 48
+            }
+        },
+        {
+            "filename": "B_SnekSnek_mon 6.aseprite",
+            "frame": {
+                "x": 0,
+                "y": 192,
+                "w": 48,
+                "h": 48
+            }
+        },
+        {
+            "filename": "B_SnekSnek_mon 7.aseprite",
+            "frame": {
+                "x": 48,
+                "y": 192,
+                "w": 48,
+                "h": 48
+            }
+        },
+        {
+            "filename": "B_SnekSnek_mon 8.aseprite",
+            "frame": {
+                "x": 96,
+                "y": 192,
+                "w": 48,
+                "h": 48
+            }
+        },
+        {
+            "filename": "B_SnekSnek_mon 9.aseprite",
+            "frame": {
+                "x": 144,
+                "y": 192,
+                "w": 48,
+                "h": 48
+            }
+        },
+        {
+            "filename": "B_SnekSnek_mon 10.aseprite",
+            "frame": {
+                "x": 192,
+                "y": 192,
+                "w": 48,
+                "h": 48
+            }
+        },
+        {
+            "filename": "B_SnekSnek_mon 11.aseprite",
+            "frame": {
+                "x": 240,
+                "y": 192,
+                "w": 48,
+                "h": 48
+            }
+        },
+        {
+            "filename": "B_SnekSnek_mon 12.aseprite",
+            "frame": {
+                "x": 0,
+                "y": 144,
+                "w": 48,
+                "h": 48
+            }
+        },
+        {
+            "filename": "B_SnekSnek_mon 13.aseprite",
+            "frame": {
+                "x": 48,
+                "y": 144,
+                "w": 48,
+                "h": 48
+            }
+        },
+        {
+            "filename": "B_SnekSnek_mon 14.aseprite",
+            "frame": {
+                "x": 96,
+                "y": 144,
+                "w": 48,
+                "h": 48
+            }
+        },
+        {
+            "filename": "B_SnekSnek_mon 15.aseprite",
+            "frame": {
+                "x": 144,
+                "y": 144,
+                "w": 48,
+                "h": 48
+            }
+        },
+        {
+            "filename": "B_SnekSnek_mon 16.aseprite",
+            "frame": {
+                "x": 192,
+                "y": 144,
+                "w": 48,
+                "h": 48
+            }
+        },
+        {
+            "filename": "B_SnekSnek_mon 17.aseprite",
+            "frame": {
+                "x": 240,
+                "y": 144,
+                "w": 48,
+                "h": 48
+            }
+        },
+        {
+            "filename": "B_SnekSnek_mon 18.aseprite",
+            "frame": {
+                "x": 0,
+                "y": 96,
+                "w": 48,
+                "h": 48
+            }
+        },
+        {
+            "filename": "B_SnekSnek_mon 19.aseprite",
+            "frame": {
+                "x": 48,
+                "y": 96,
+                "w": 48,
+                "h": 48
+            }
+        },
+        {
+            "filename": "B_SnekSnek_mon 20.aseprite",
+            "frame": {
+                "x": 96,
+                "y": 96,
+                "w": 48,
+                "h": 48
+            }
+        },
+        {
+            "filename": "B_SnekSnek_mon 21.aseprite",
+            "frame": {
+                "x": 144,
+                "y": 96,
+                "w": 48,
+                "h": 48
+            }
+        },
+        {
+            "filename": "B_SnekSnek_mon 22.aseprite",
+            "frame": {
+                "x": 192,
+                "y": 96,
+                "w": 48,
+                "h": 48
+            }
+        },
+        {
+            "filename": "B_SnekSnek_mon 23.aseprite",
+            "frame": {
+                "x": 240,
+                "y": 96,
+                "w": 48,
+                "h": 48
+            }
+        },
+        {
+            "filename": "B_SnekSnek_mon 24.aseprite",
+            "frame": {
+                "x": 0,
+                "y": 48,
+                "w": 48,
+                "h": 48
+            }
+        },
+        {
+            "filename": "B_SnekSnek_mon 25.aseprite",
+            "frame": {
+                "x": 48,
+                "y": 48,
+                "w": 48,
+                "h": 48
+            }
+        }
+    ],
+    "meta": {
+        "monsterGameFormat": true,
+        "app": "http://www.aseprite.org/",
+        "version": "1.2.27-x64",
+        "image": "B_SnekSnek_mon.png",
+        "size": {
+            "x": 0,
+            "y": 0,
+            "w": 288,
+            "h": 240
+        },
+        "frameTags": [
+            {
+                "name": "Idle",
+                "from": 0,
+                "to": 7,
+                "direction": "forward",
+                "nextKey": ""
+            },
+            {
+                "name": "Hit",
+                "from": 8,
+                "to": 16,
+                "direction": "forward",
+                "nextKey": ""
+            },
+            {
+                "name": "Attack",
+                "from": 17,
+                "to": 25,
+                "direction": "forward",
+                "nextKey": ""
+            }
+        ]
+    }
+}

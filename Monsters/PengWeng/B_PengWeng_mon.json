@@ -1,0 +1,26 @@
+{
+    "frames": [
+        {
+            "filename": "B_PengWeng_mon.aseprite",
+            "frame": {
+                "x": 0,
+                "y": 64,
+                "w": 64,
+                "h": 64
+            }
+        }
+    ],
+    "meta": {
+        "monsterGameFormat": true,
+        "app": "http://www.aseprite.org/",
+        "version": "1.2.27-x64",
+        "image": "B_PengWeng_mon.png",
+        "size": {
+            "x": 0,
+            "y": 0,
+            "w": 64,
+            "h": 64
+        },
+        "frameTags": []
+    }
+}

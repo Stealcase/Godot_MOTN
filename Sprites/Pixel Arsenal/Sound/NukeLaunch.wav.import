@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bube25hpspgaj"
+path="res://.godot/imported/NukeLaunch.wav-1592e2b62d108c820f1d61d51680206c.sample"
+
+[deps]
+
+source_file="res://Sprites/Pixel Arsenal/Sound/NukeLaunch.wav"
+dest_files=["res://.godot/imported/NukeLaunch.wav-1592e2b62d108c820f1d61d51680206c.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

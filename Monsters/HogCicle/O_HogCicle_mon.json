@@ -1,0 +1,26 @@
+{
+    "frames": [
+        {
+            "filename": "O_HogCicle_mon.aseprite",
+            "frame": {
+                "x": 0,
+                "y": 16,
+                "w": 16,
+                "h": 16
+            }
+        }
+    ],
+    "meta": {
+        "monsterGameFormat": true,
+        "app": "http://www.aseprite.org/",
+        "version": "1.2.27-x64",
+        "image": "O_HogCicle_mon.png",
+        "size": {
+            "x": 0,
+            "y": 0,
+            "w": 16,
+            "h": 16
+        },
+        "frameTags": []
+    }
+}

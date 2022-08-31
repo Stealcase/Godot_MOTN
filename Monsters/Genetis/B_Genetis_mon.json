@@ -1,0 +1,86 @@
+{
+    "frames": [
+        {
+            "filename": "B_Genetis_mon 0.aseprite",
+            "frame": {
+                "x": 0,
+                "y": 112,
+                "w": 56,
+                "h": 56
+            }
+        },
+        {
+            "filename": "B_Genetis_mon 1.aseprite",
+            "frame": {
+                "x": 56,
+                "y": 112,
+                "w": 56,
+                "h": 56
+            }
+        },
+        {
+            "filename": "B_Genetis_mon 2.aseprite",
+            "frame": {
+                "x": 0,
+                "y": 56,
+                "w": 56,
+                "h": 56
+            }
+        },
+        {
+            "filename": "B_Genetis_mon 3.aseprite",
+            "frame": {
+                "x": 0,
+                "y": 56,
+                "w": 56,
+                "h": 56
+            }
+        },
+        {
+            "filename": "B_Genetis_mon 4.aseprite",
+            "frame": {
+                "x": 56,
+                "y": 56,
+                "w": 56,
+                "h": 56
+            }
+        },
+        {
+            "filename": "B_Genetis_mon 5.aseprite",
+            "frame": {
+                "x": 56,
+                "y": 56,
+                "w": 56,
+                "h": 56
+            }
+        }
+    ],
+    "meta": {
+        "monsterGameFormat": true,
+        "app": "http://www.aseprite.org/",
+        "version": "1.2.27-x64",
+        "image": "B_Genetis_mon.png",
+        "size": {
+            "x": 0,
+            "y": 0,
+            "w": 112,
+            "h": 112
+        },
+        "frameTags": [
+            {
+                "name": "Attack",
+                "from": 0,
+                "to": 5,
+                "direction": "forward",
+                "nextKey": ""
+            },
+            {
+                "name": "Idle",
+                "from": 0,
+                "to": 1,
+                "direction": "forward",
+                "nextKey": ""
+            }
+        ]
+    }
+}

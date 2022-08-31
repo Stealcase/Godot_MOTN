@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://co4faxu3m07v1"
+path="res://.godot/imported/Liquid.wav-a73ee23823c8d7445e135b11ca7387f4.sample"
+
+[deps]
+
+source_file="res://Sprites/Pixel Arsenal/Sound/Liquid.wav"
+dest_files=["res://.godot/imported/Liquid.wav-a73ee23823c8d7445e135b11ca7387f4.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

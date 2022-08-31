@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://b51di27d7jlbq"
+path="res://.godot/imported/Plasma2.wav-2ba07bf7266b703c54c775b7259f684e.sample"
+
+[deps]
+
+source_file="res://Sprites/Pixel Arsenal/Sound/Plasma2.wav"
+dest_files=["res://.godot/imported/Plasma2.wav-2ba07bf7266b703c54c775b7259f684e.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

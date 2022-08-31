@@ -1,0 +1,33 @@
+{
+    "frames": [
+        {
+            "filename": "O_SpriteMissing_mon.aseprite",
+            "frame": {
+                "x": 0,
+                "y": 16,
+                "w": 16,
+                "h": 16
+            }
+        }
+    ],
+    "meta": {
+        "monsterGameFormat": true,
+        "app": "http://www.aseprite.org/",
+        "version": "1.2.25-x64",
+        "image": "O_SpriteMissing_mon.png",
+        "size": {
+            "x": 0,
+            "y": 0,
+            "w": 16,
+            "h": 16
+        },
+        "frameTags": [
+            {
+                "name": "Default",
+                "from": 0,
+                "to": 0,
+                "direction": "forward"
+            }
+        ]
+    }
+}

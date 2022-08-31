@@ -1,0 +1,103 @@
+{
+    "frames": [
+        {
+            "filename": "Overworld Reactions 0.aseprite",
+            "frame": {
+                "x": 0,
+                "y": 32,
+                "w": 32,
+                "h": 32
+            }
+        },
+        {
+            "filename": "Overworld Reactions 1.aseprite",
+            "frame": {
+                "x": 32,
+                "y": 32,
+                "w": 32,
+                "h": 32
+            }
+        },
+        {
+            "filename": "Overworld Reactions 2.aseprite",
+            "frame": {
+                "x": 64,
+                "y": 32,
+                "w": 32,
+                "h": 32
+            }
+        },
+        {
+            "filename": "Overworld Reactions 3.aseprite",
+            "frame": {
+                "x": 96,
+                "y": 32,
+                "w": 32,
+                "h": 32
+            }
+        },
+        {
+            "filename": "Overworld Reactions 4.aseprite",
+            "frame": {
+                "x": 128,
+                "y": 32,
+                "w": 32,
+                "h": 32
+            }
+        },
+        {
+            "filename": "Overworld Reactions 5.aseprite",
+            "frame": {
+                "x": 160,
+                "y": 32,
+                "w": 32,
+                "h": 32
+            }
+        },
+        {
+            "filename": "Overworld Reactions 6.aseprite",
+            "frame": {
+                "x": 192,
+                "y": 32,
+                "w": 32,
+                "h": 32
+            }
+        },
+        {
+            "filename": "Overworld Reactions 7.aseprite",
+            "frame": {
+                "x": 224,
+                "y": 32,
+                "w": 32,
+                "h": 32
+            }
+        }
+    ],
+    "meta": {
+        "monsterGameFormat": true,
+        "app": "http://www.aseprite.org/",
+        "version": "1.2.27-x64",
+        "image": "Speaking.png",
+        "size": {
+            "x": 0,
+            "y": 0,
+            "w": 256,
+            "h": 32
+        },
+        "frameTags": [
+            {
+                "name": "Default",
+                "from": 0,
+                "to": 7,
+                "direction": "forward",
+                "nextKey": "Loop"
+            },
+            {
+                "name": "Loop",
+                "from": 3,
+                "to": 7,
+                "direction": "forward"
+            }
+        ]
+    }
+}

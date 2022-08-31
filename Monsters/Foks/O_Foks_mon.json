@@ -1,0 +1,50 @@
+{
+    "frames": [
+        {
+            "filename": "O_Foks_mon 0.aseprite",
+            "frame": {
+                "x": 0,
+                "y": 16,
+                "w": 16,
+                "h": 16
+            }
+        },
+        {
+            "filename": "O_Foks_mon 1.aseprite",
+            "frame": {
+                "x": 16,
+                "y": 16,
+                "w": 16,
+                "h": 16
+            }
+        }
+    ],
+    "meta": {
+        "monsterGameFormat": true,
+        "app": "http://www.aseprite.org/",
+        "version": "1.2.27-x64",
+        "image": "O_Foks_mon.png",
+        "size": {
+            "x": 0,
+            "y": 0,
+            "w": 32,
+            "h": 16
+        },
+        "frameTags": [
+            {
+                "name": "Front",
+                "from": 0,
+                "to": 0,
+                "direction": "forward",
+                "nextKey": ""
+            },
+            {
+                "name": "Back",
+                "from": 1,
+                "to": 1,
+                "direction": "forward",
+                "nextKey": ""
+            }
+        ]
+    }
+}

@@ -1,0 +1,318 @@
+{
+    "frames": [
+        {
+            "filename": "B_Helenkibun_mon 0.aseprite",
+            "frame": {
+                "x": 0,
+                "y": 280,
+                "w": 56,
+                "h": 56
+            }
+        },
+        {
+            "filename": "B_Helenkibun_mon 1.aseprite",
+            "frame": {
+                "x": 56,
+                "y": 280,
+                "w": 56,
+                "h": 56
+            }
+        },
+        {
+            "filename": "B_Helenkibun_mon 2.aseprite",
+            "frame": {
+                "x": 112,
+                "y": 280,
+                "w": 56,
+                "h": 56
+            }
+        },
+        {
+            "filename": "B_Helenkibun_mon 3.aseprite",
+            "frame": {
+                "x": 168,
+                "y": 280,
+                "w": 56,
+                "h": 56
+            }
+        },
+        {
+            "filename": "B_Helenkibun_mon 4.aseprite",
+            "frame": {
+                "x": 224,
+                "y": 280,
+                "w": 56,
+                "h": 56
+            }
+        },
+        {
+            "filename": "B_Helenkibun_mon 5.aseprite",
+            "frame": {
+                "x": 280,
+                "y": 280,
+                "w": 56,
+                "h": 56
+            }
+        },
+        {
+            "filename": "B_Helenkibun_mon 6.aseprite",
+            "frame": {
+                "x": 0,
+                "y": 224,
+                "w": 56,
+                "h": 56
+            }
+        },
+        {
+            "filename": "B_Helenkibun_mon 7.aseprite",
+            "frame": {
+                "x": 56,
+                "y": 224,
+                "w": 56,
+                "h": 56
+            }
+        },
+        {
+            "filename": "B_Helenkibun_mon 8.aseprite",
+            "frame": {
+                "x": 112,
+                "y": 224,
+                "w": 56,
+                "h": 56
+            }
+        },
+        {
+            "filename": "B_Helenkibun_mon 9.aseprite",
+            "frame": {
+                "x": 168,
+                "y": 224,
+                "w": 56,
+                "h": 56
+            }
+        },
+        {
+            "filename": "B_Helenkibun_mon 10.aseprite",
+            "frame": {
+                "x": 224,
+                "y": 224,
+                "w": 56,
+                "h": 56
+            }
+        },
+        {
+            "filename": "B_Helenkibun_mon 11.aseprite",
+            "frame": {
+                "x": 280,
+                "y": 224,
+                "w": 56,
+                "h": 56
+            }
+        },
+        {
+            "filename": "B_Helenkibun_mon 12.aseprite",
+            "frame": {
+                "x": 0,
+                "y": 168,
+                "w": 56,
+                "h": 56
+            }
+        },
+        {
+            "filename": "B_Helenkibun_mon 13.aseprite",
+            "frame": {
+                "x": 56,
+                "y": 168,
+                "w": 56,
+                "h": 56
+            }
+        },
+        {
+            "filename": "B_Helenkibun_mon 14.aseprite",
+            "frame": {
+                "x": 112,
+                "y": 168,
+                "w": 56,
+                "h": 56
+            }
+        },
+        {
+            "filename": "B_Helenkibun_mon 15.aseprite",
+            "frame": {
+                "x": 168,
+                "y": 168,
+                "w": 56,
+                "h": 56
+            }
+        },
+        {
+            "filename": "B_Helenkibun_mon 16.aseprite",
+            "frame": {
+                "x": 224,
+                "y": 168,
+                "w": 56,
+                "h": 56
+            }
+        },
+        {
+            "filename": "B_Helenkibun_mon 17.aseprite",
+            "frame": {
+                "x": 280,
+                "y": 168,
+                "w": 56,
+                "h": 56
+            }
+        },
+        {
+            "filename": "B_Helenkibun_mon 18.aseprite",
+            "frame": {
+                "x": 0,
+                "y": 112,
+                "w": 56,
+                "h": 56
+            }
+        },
+        {
+            "filename": "B_Helenkibun_mon 19.aseprite",
+            "frame": {
+                "x": 56,
+                "y": 112,
+                "w": 56,
+                "h": 56
+            }
+        },
+        {
+            "filename": "B_Helenkibun_mon 20.aseprite",
+            "frame": {
+                "x": 112,
+                "y": 112,
+                "w": 56,
+                "h": 56
+            }
+        },
+        {
+            "filename": "B_Helenkibun_mon 21.aseprite",
+            "frame": {
+                "x": 168,
+                "y": 112,
+                "w": 56,
+                "h": 56
+            }
+        },
+        {
+            "filename": "B_Helenkibun_mon 22.aseprite",
+            "frame": {
+                "x": 224,
+                "y": 112,
+                "w": 56,
+                "h": 56
+            }
+        },
+        {
+            "filename": "B_Helenkibun_mon 23.aseprite",
+            "frame": {
+                "x": 280,
+                "y": 112,
+                "w": 56,
+                "h": 56
+            }
+        },
+        {
+            "filename": "B_Helenkibun_mon 24.aseprite",
+            "frame": {
+                "x": 280,
+                "y": 112,
+                "w": 56,
+                "h": 56
+            }
+        },
+        {
+            "filename": "B_Helenkibun_mon 25.aseprite",
+            "frame": {
+                "x": 0,
+                "y": 56,
+                "w": 56,
+                "h": 56
+            }
+        },
+        {
+            "filename": "B_Helenkibun_mon 26.aseprite",
+            "frame": {
+                "x": 56,
+                "y": 56,
+                "w": 56,
+                "h": 56
+            }
+        },
+        {
+            "filename": "B_Helenkibun_mon 27.aseprite",
+            "frame": {
+                "x": 112,
+                "y": 56,
+                "w": 56,
+                "h": 56
+            }
+        },
+        {
+            "filename": "B_Helenkibun_mon 28.aseprite",
+            "frame": {
+                "x": 168,
+                "y": 56,
+                "w": 56,
+                "h": 56
+            }
+        },
+        {
+            "filename": "B_Helenkibun_mon 29.aseprite",
+            "frame": {
+                "x": 224,
+                "y": 56,
+                "w": 56,
+                "h": 56
+            }
+        },
+        {
+            "filename": "B_Helenkibun_mon 30.aseprite",
+            "frame": {
+                "x": 280,
+                "y": 56,
+                "w": 56,
+                "h": 56
+            }
+        }
+    ],
+    "meta": {
+        "monsterGameFormat": true,
+        "app": "http://www.aseprite.org/",
+        "version": "1.2.27-x64",
+        "image": "B_Helenkibun_mon.png",
+        "size": {
+            "x": 0,
+            "y": 0,
+            "w": 336,
+            "h": 280
+        },
+        "frameTags": [
+            {
+                "name": "Idle",
+                "from": 0,
+                "to": 5,
+                "direction": "forward",
+                "nextKey": ""
+            },
+            {
+                "name": "Attack",
+                "from": 6,
+                "to": 12,
+                "direction": "forward",
+                "nextKey": ""
+            },
+            {
+                "name": "Hit",
+                "from": 13,
+                "to": 30,
+                "direction": "forward",
+                "nextKey": ""
+            }
+        ]
+    }
+}

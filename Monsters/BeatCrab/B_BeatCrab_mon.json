@@ -1,0 +1,86 @@
+{
+    "frames": [
+        {
+            "filename": "B_BeatCrab_mon 0.aseprite",
+            "frame": {
+                "x": 0,
+                "y": 80,
+                "w": 40,
+                "h": 40
+            }
+        },
+        {
+            "filename": "B_BeatCrab_mon 1.aseprite",
+            "frame": {
+                "x": 40,
+                "y": 80,
+                "w": 40,
+                "h": 40
+            }
+        },
+        {
+            "filename": "B_BeatCrab_mon 2.aseprite",
+            "frame": {
+                "x": 80,
+                "y": 80,
+                "w": 40,
+                "h": 40
+            }
+        },
+        {
+            "filename": "B_BeatCrab_mon 3.aseprite",
+            "frame": {
+                "x": 80,
+                "y": 80,
+                "w": 40,
+                "h": 40
+            }
+        },
+        {
+            "filename": "B_BeatCrab_mon 4.aseprite",
+            "frame": {
+                "x": 0,
+                "y": 40,
+                "w": 40,
+                "h": 40
+            }
+        },
+        {
+            "filename": "B_BeatCrab_mon 5.aseprite",
+            "frame": {
+                "x": 40,
+                "y": 40,
+                "w": 40,
+                "h": 40
+            }
+        }
+    ],
+    "meta": {
+        "monsterGameFormat": true,
+        "app": "http://www.aseprite.org/",
+        "version": "1.2.27-x64",
+        "image": "B_BeatCrab_mon.png",
+        "size": {
+            "x": 0,
+            "y": 0,
+            "w": 120,
+            "h": 80
+        },
+        "frameTags": [
+            {
+                "name": "Idle",
+                "from": 0,
+                "to": 5,
+                "direction": "forward",
+                "nextKey": ""
+            },
+            {
+                "name": "Attack",
+                "from": 3,
+                "to": 5,
+                "direction": "forward",
+                "nextKey": ""
+            }
+        ]
+    }
+}
