@@ -1,0 +1,293 @@
+{
+   "actions": [
+	  {
+		 "id": 1,
+		 "name": "Brazen Fire",
+		 "type": 2,
+		 "value": 2,
+		 "characteristic": 2,
+		 "description": "Fire with no shadow of a doubt"
+	  },
+	  {
+		 "id": 2,
+		 "name": "Sanitary Water",
+		 "type": 3,
+		 "value": 3,
+		 "characteristic": 0,
+		 "description": "Sometimes you just need to purge the unclean"
+	  },
+	  {
+		 "id": 3,
+		 "name": "Unlimited Wind",
+		 "type": 4,
+		 "value": 4,
+		 "characteristic": 1,
+		 "description": "It just keeps coming"
+	  },
+	  {
+		 "id": 4,
+		 "name": "Electric Drone",
+		 "type": 5,
+		 "value": 3,
+		 "characteristic": 1,
+		 "description": "You're not sure where that buzzing is coming from"
+	  },
+	  {
+		 "id": 5,
+		 "name": "Running Hot",
+		 "type": 5,
+		 "value": 4,
+		 "characteristic": 0,
+		 "description": "When you kick up sparks."
+	  },
+	  {
+		 "id": 6,
+		 "name": "Air Revolution",
+		 "type": 4,
+		 "value": 2,
+		 "characteristic": 0,
+		 "description": "This will happen."
+	  },
+	  {
+		 "id": 7,
+		 "name": "Flying Works",
+		 "type": 4,
+		 "value": 3,
+		 "characteristic": 1,
+		 "description": "When all else fails."
+	  },
+	  {
+		 "id": 8,
+		 "name": "Anarchy Electric",
+		 "type": 5,
+		 "value": 4,
+		 "characteristic": 1,
+		 "description": "Destroy the highest point of the hierarchy."
+	  },
+	  {
+		 "id": 9,
+		 "name": "Zap and kick",
+		 "type": 5,
+		 "value": 5,
+		 "characteristic": 0,
+		 "description": "Because the \"hit and run\" doesn't have the same ring to it."
+	  },
+	  {
+		 "id": 10,
+		 "name": "AquaFist",
+		 "type": 3,
+		 "value": 2,
+		 "characteristic": 0,
+		 "description": "Why would you cover your hand with water like that?"
+	  },
+	  {
+		 "id": 11,
+		 "name": "Prioritized Survival",
+		 "type": 6,
+		 "value": 4,
+		 "characteristic": 0,
+		 "description": "There doesn't seem to be any other option."
+	  },
+	  {
+		 "id": 12,
+		 "name": "Rock the Boat",
+		 "type": 3,
+		 "value": 6,
+		 "characteristic": 1,
+		 "description": "Tip it over."
+	  },
+	  {
+		 "id": 13,
+		 "name": "Extortion",
+		 "type": 1,
+		 "value": 3,
+		 "characteristic": 2,
+		 "description": "Holding Leverage."
+	  },
+	  {
+		 "id": 14,
+		 "name": "Particalize",
+		 "type": 1,
+		 "value": 4,
+		 "characteristic": 1,
+		 "description": "The atoms won't hold together much longer."
+	  },
+	  {
+		 "id": 15,
+		 "name": "Decompress",
+		 "type": 1,
+		 "value": 5,
+		 "characteristic": 2,
+		 "flag1": "Decrypt",
+		 "description": "Release the pressure."
+	  },
+	  {
+		 "id": 16,
+		 "name": "Bright",
+		 "type": 10,
+		 "value": 4,
+		 "characteristic": 0,
+		 "description": "Shining."
+	  },
+	  {
+		 "id": 17,
+		 "name": "Fireworks",
+		 "type": 2,
+		 "value": 6,
+		 "characteristic": 2,
+		 "description": "So it does."
+	  },
+	  {
+		 "id": 18,
+		 "name": "Casual Radiation",
+		 "type": 1,
+		 "value": 2,
+		 "characteristic": 0,
+		 "description": "I didn't even notice."
+	  },
+	  {
+		 "id": 19,
+		 "name": "Sparks are Flying",
+		 "type": 2,
+		 "value": 3,
+		 "characteristic": 2,
+		 "description": "From both competitors"
+	  },
+	  {
+		 "id": 20,
+		 "name": "Putting out the fire",
+		 "type": 3,
+		 "value": 4,
+		 "characteristic": 2,
+		 "description": "As a form of defence."
+	  },
+	  {
+		 "id": 21,
+		 "name": "Swoop in",
+		 "type": 4,
+		 "value": 3,
+		 "characteristic": 0,
+		 "description": "Then get out."
+	  },
+	  {
+		 "id": 22,
+		 "name": "Arms Electric",
+		 "type": 5,
+		 "value": 4,
+		 "characteristic": 1,
+		 "description": "Knees on fire."
+	  },
+	  {
+		 "id": 23,
+		 "name": "Feast on Acid",
+		 "type": 9,
+		 "value": 5,
+		 "characteristic": 1,
+		 "description": "Have a troublesome bathroom break."
+	  },
+	  {
+		 "id": 24,
+		 "name": "Beyond Melted",
+		 "type": 2,
+		 "value": 4,
+		 "characteristic": 2,
+		 "description": "Hard to tell what it was supposed to be."
+	  },
+	  {
+		 "id": 25,
+		 "name": "Spectrum",
+		 "type": 10,
+		 "value": 3,
+		 "characteristic": 0,
+		 "description": "Everything exists there."
+	  },
+	  {
+		 "id": 26,
+		 "name": "Decrypt",
+		 "type": 11,
+		 "value": 2,
+		 "characteristic": 0,
+		 "description": "I will find the hidden."
+	  },
+	  {
+		 "id": 27,
+		 "name": "Corrupt",
+		 "type": 12,
+		 "value": 3,
+		 "characteristic": 0,
+		 "description": "Become undone."
+	  },
+	  {
+		 "id": 28,
+		 "name": "Feast",
+		 "type": 12,
+		 "value": 6,
+		 "characteristic": 2,
+		 "description": "Take nothing for granted."
+	  },
+	  {
+		 "id": 29,
+		 "name": "Beat of Drums",
+		 "type": 11,
+		 "value": 4,
+		 "characteristic": 1,
+		 "description": "This used to be important"
+	  },
+	  {
+		 "id": 30,
+		 "name": "Pull Rocks",
+		 "type": 7,
+		 "value": 2,
+		 "characteristic": 1,
+		 "description": "Brick by boring brick"
+	  },
+	  {
+		 "id": 31,
+		 "name": "Ionize",
+		 "type": 1,
+		 "value": 6,
+		 "characteristic": 0,
+		 "description": "This feels hot."
+	  },
+	  {
+		 "id": 32,
+		 "name": "Cinder ",
+		 "type": 2,
+		 "value": 3,
+		 "characteristic": 1,
+		 "description": "Don't step on it."
+	  },
+	  {
+		 "id": 33,
+		 "name": "Submerge",
+		 "type": 3,
+		 "value": 4,
+		 "characteristic": 2,
+		 "description": "Drown it all out."
+	  },
+	  {
+		 "id": 34,
+		 "name": "Haiyaaa",
+		 "type": 4,
+		 "value": 5,
+		 "characteristic": 0,
+		 "description": "Heeeeeiigh!"
+	  },
+	  {
+		 "id": 35,
+		 "name": "Crack a rock",
+		 "type": 7,
+		 "value": 4,
+		 "characteristic": 0,
+		 "description": "Make a deal."
+	  },
+	  {
+		 "id": 36,
+		 "name": "Half Life",
+		 "type": 1,
+		 "value": 3,
+		 "characteristic": 1,
+		 "description": "Losing part of it every day."
+	  }
+   ]
+}

@@ -1,0 +1,184 @@
+{
+	"breeds": [
+		{
+			"id": 1,
+			"name": "SnekSnek",
+			"rules": [
+				{
+					"ruleName": "SnekSnek_Handle_Death",
+					"concept": "Interaction",
+					"who": 1,
+					"criteria": [
+					{
+						"key": "Num_Friends",
+						"a": 2,
+						"b": 2
+					},
+					{
+						"key": "Party_Death",
+						"a": 1,
+						"b": 2
+					},
+					{
+						"key": "Interactions",
+						"a": 2,
+						"b": 2
+					}],
+				"response":[
+						{
+							"responseOptionPrompt": "",
+							"particle": 1,
+							"emotion":1,
+							"sentence":
+								"I can't really handle death all that well. Can we get out of here? I'm getting a little uncomforta- WHAT?!?!",
+							"repeatable": false,
+							"remember": {
+								"GLOBAL":{
+								},
+								"LOCAL": {
+									 "SnekSnek_Handle_Death": 1
+								}
+							},
+							"endResponse": {
+								"options":["Interact_Helenkibun",""],
+								"onEnd": "OnReply"
+							}
+						}
+					]
+			},
+				{
+					"ruleName": "Reply_Interact_Helenkibun",
+					"concept": "Reply",
+					"who": 2,
+					"criteria": [
+					{
+						"key": "Interact_Helenkibun",
+						"a": 1,
+						"b": 1
+					}],
+				"response":[
+						{
+							"particle": 1,
+							"emotion":1,
+							"sentence":
+								"So what if you are Many? I DGAF",
+							"repeatable": false,
+							"remember": {
+								"GLOBAL":{
+								},
+								"LOCAL": {
+									 "SnekSnek_Handle_Death": 1
+								}
+							},
+							"endResponse": {
+								"options":["Interact_Helenkibun",""],
+								"onEnd": "OnReply"
+							}
+						}
+					]
+			},
+			{
+				"ruleName": "Helenkibun_Looked_At_SnekSnek",
+				"concept": "Look_At",
+				"who": 2,
+				"criteria": [
+					{
+						"key":  "Helenkibun_Looked_At_SnekSnek",
+						"a": 1,
+						"b": 1
+					}
+				],
+				"response":[
+						{
+							"dialogueKey": "Helenkibun_Looked_At_SnekSnek",
+							"sentence": 
+								"Don't look at me like that! I have special eyes. You have too many eyes...",
+							"trigger": [
+							]
+						}
+					]
+				}
+		]
+	},
+		{
+			"id": 2,
+			"name": "Helenkibun",
+			"rules": [
+				{
+					"ruleName": "Interact_Helenkibun",
+					"concept": "Interaction",
+					"who": -1,
+					"criteria": [
+						{
+							"key": "Interact_Helenkibun",
+							"a":0,
+							"b":0
+						}
+					],
+				"response":[
+						{
+							"dialogueKey": "Helenkibun_Interact",
+							"sentence": 
+								"We are many. You are but one!",
+							"repeatable": false,
+							"remember": {
+								"GLOBAL":{
+								},
+								"LOCAL": {
+									//  "Interact_Helenkibun": 1
+								}
+							},
+							"trigger": [
+							]
+						}
+					]
+				},
+				{
+					"ruleName": "Reply_Interact_Helenkibun2",
+					"concept": "Reply",
+					"who": -1,
+					"criteria": [
+						{
+							"key": "Reply_Interact_Helenkibun",
+							"a":1,
+							"b":1
+						}
+					],
+				"response":[
+						{
+							"dialogueKey": "Helenkibun_Interact",
+							"sentence": 
+								"We are the MOST",
+							"repeatable": false,
+							"remember": {
+								"GLOBAL":{
+								},
+								"LOCAL": {
+									"Reply_Interact_Helenkibun2": 1
+								}
+							},
+							"trigger": [
+							]
+						}
+					]
+				},
+			{
+				"ruleName": "Look_At_SnekSnek",
+				"concept": "Look_At",
+				"who": 1,
+				"criteria": [
+				],
+				"response":[
+						{
+							"dialogueKey": "Anyone_Looked_At_Helenkibun",
+							"sentence": 
+								"We're just a pile o' bunnies. We mean you no harm.",
+							"trigger": [
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

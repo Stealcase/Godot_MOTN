@@ -14,8 +14,7 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float):
-	player_input.x = Input.get_axis("move_left", "move_right")
-	player_input.y = Input.get_axis("move_up", "move_down")
+	player_input = Input.get_vector("move_left", "move_right", "move_up", "move_down")
 #	if player_input != Vector2.ZERO:
 #		player_input = player_input.normalized()
 	if player_input != Vector2.ZERO:
@@ -26,3 +25,5 @@ func _process(delta: float):
 	
 	#Are we moving?
 	playerMovement.receive_input(direction, _is_move_input)
+
+#func _input(event: InputEventAction):

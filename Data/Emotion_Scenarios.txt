@@ -1,0 +1,15 @@
+# Generic Scenarios where emotions can be triggered 
+
+
+where monster switches into fire attack:
+	MonsterFriendship--
+	
+
+where monster is about to die and we are friends:
+	"Hold on now!!!!"
+	ReplaceMonster();
+	Friendship++
+
+
+
+* Monster switches into 

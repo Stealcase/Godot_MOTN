@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bbk5hjlwnqcdx"
+path="res://.godot/imported/GunShot01.wav-fe4aa1617bdef9e82f6afbc532a8720d.sample"
+
+[deps]
+
+source_file="res://Assets/Sprites/Pixel Arsenal/Sound/GunShot01.wav"
+dest_files=["res://.godot/imported/GunShot01.wav-fe4aa1617bdef9e82f6afbc532a8720d.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

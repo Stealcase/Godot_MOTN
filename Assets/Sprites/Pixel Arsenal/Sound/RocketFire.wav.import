@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cstowwdtae5yc"
+path="res://.godot/imported/RocketFire.wav-a93d8859d2a7b952754fc9399eebfced.sample"
+
+[deps]
+
+source_file="res://Assets/Sprites/Pixel Arsenal/Sound/RocketFire.wav"
+dest_files=["res://.godot/imported/RocketFire.wav-a93d8859d2a7b952754fc9399eebfced.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

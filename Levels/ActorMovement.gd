@@ -22,6 +22,10 @@ var _is_move_input: bool = false
 func receive_input(dir: Vector2, is_moving: bool):
 	direction = dir
 	_is_move_input = is_moving
+	ChangeDirection(direction)
+
+@onready
+var animator = $AnimatedSprite2D
 
 func _physics_process(delta: float):
 	if not _is_move_input: return
@@ -63,3 +67,54 @@ func _physics_process(delta: float):
 #	#if input_vector != Vector2.ZERO:
 #		#input_vector = input_vector.normalized()
 #	direction = input_vector
+
+
+
+func ChangeDirection(direct: Vector2):
+	var dir = Directions.Up;
+	var angle = rad2deg(direct.angle()) #s- 90
+
+	if angle >= -23 && angle <= 22:
+		dir = Directions.Right
+	elif angle >= 158 || angle <= -158:
+		dir = Directions.Left
+	elif angle <= -68 && angle >= -113:
+		dir = Directions.Up
+	elif angle >= 68 && angle <= 113:
+		dir = Directions.Down
+	#Angled Directions
+	elif angle < -23 && angle > -68:
+		dir = Directions.UpRight
+	elif angle > 23 && angle < 68:
+		dir = Directions.DownRight
+	elif angle > 113 && angle < 158:
+		dir = Directions.DownLeft
+	elif angle < -113 && angle > -158:
+		dir = Directions.UpLeft
+	if (dir != facing):
+		facing = dir
+		animator.play(directionKeys[facing])
+	
+#	owner.ChangeFacing(facing);
+	
+enum Directions {
+	Right,
+	Left,
+	Up,
+	Down,
+	UpRight,
+	DownRight,
+	DownLeft,
+	UpLeft
+	}
+var directionKeys = [	
+	"Right",
+	"Left",
+	"Up",
+	"Down",
+	"UpRight",
+	"DownRight",
+	"DownLeft",
+	"UpLeft"
+	]
+var facing : Directions

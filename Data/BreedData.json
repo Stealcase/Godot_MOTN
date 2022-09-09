@@ -1,0 +1,369 @@
+{
+   "breeds": [
+	  {
+		 "id": 0,
+		 "name": "Human",
+		 "types": [
+			1,
+			0
+		 ],
+		 "hp": 5,
+		 "strength": 5,
+		 "defense": 5,
+		 "power": 5,
+		 "fortitude": 5,
+		 "speed": 5,
+		 "growthHp": 1,
+		 "growthStrength": 2,
+		 "growthDefense": 1,
+		 "growthFortitude": 1,
+		 "growthPower": 1,
+		 "growthSpeed": 1,
+		 "visualDescription": "A human. A rare sight in these trying times"
+	  },
+	  {
+		 "id": 1,
+		 "name": "SnekSnek",
+		 "types": [
+			12,
+			1
+		 ],
+		 "hp": 10,
+		 "strength": 10,
+		 "defense": 6,
+		 "power": 6,
+		 "fortitude": 6,
+		 "speed": 14,
+		 "growthHp": 1,
+		 "growthStrength": 2,
+		 "growthDefense": 1,
+		 "growthFortitude": 1,
+		 "growthPower": 1,
+		 "growthSpeed": 1,
+		 "visualDescription": "A snake in a human skull chewing on a giant eyeball but never swallowing it. Drools a lot."
+	  },
+	  {
+		 "id": 2,
+		 "name": "Helenkibun",
+		 "types": [
+			12,
+			0
+		 ],
+		 "hp": 15,
+		 "strength": 13,
+		 "defense": 8,
+		 "power": 8,
+		 "fortitude": 8,
+		 "speed": 8,
+		 "growthHp": 1,
+		 "growthStrength": 1,
+		 "growthDefense": 1,
+		 "growthFortitude": 2,
+		 "growthPower": 1,
+		 "growthSpeed": 1,
+		 "visualDescription": "A pile of radioactive parasitic bunnies. There seems to be some sort of creature underneath."
+	  },
+	  {
+		 "id": 3,
+		 "name": "BeatCrab",
+		 "types": [
+			3,
+			0
+		 ],
+		 "hp": 12,
+		 "strength": 8,
+		 "defense": 9,
+		 "power": 8,
+		 "fortitude": 7,
+		 "speed": 5,
+		 "growthHp": 1,
+		 "growthStrength": 1,
+		 "growthDefense": 1,
+		 "growthFortitude": 1,
+		 "growthPower": 1,
+		 "growthSpeed": 1,
+		 "visualDescription": "A small rounded crab with big eyes and a soundblaster for a shell."
+	  },
+	  {
+		 "id": 4,
+		 "name": "Snile",
+		 "types": [
+			8,
+			0
+		 ],
+		 "hp": 15,
+		 "strength": 8,
+		 "defense": 12,
+		 "power": 8,
+		 "fortitude": 12,
+		 "speed": 3,
+		 "growthHp": 1,
+		 "growthStrength": 1,
+		 "growthDefense": 1,
+		 "growthFortitude": 1,
+		 "growthPower": 1,
+		 "growthSpeed": 1,
+		 "visualDescription": "An electric snail with big eyes and arms."
+	  },
+	  {
+		 "id": 5,
+		 "name": "MaskTask",
+		 "types": [
+			6,
+			0
+		 ],
+		 "hp": 8,
+		 "strength": 4,
+		 "defense": 6,
+		 "power": 16,
+		 "fortitude": 6,
+		 "speed": 8,
+		 "growthHp": 1,
+		 "growthStrength": 1,
+		 "growthDefense": 1,
+		 "growthFortitude": 1,
+		 "growthPower": 1,
+		 "growthSpeed": 1,
+		 "visualDescription": "A small thin creature with a wooden mask and sad hollow eyes"
+	  },
+	  {
+		 "id": 6,
+		 "name": "VertiCat",
+		 "types": [
+			1,
+			0
+		 ],
+		 "hp": 9,
+		 "strength": 8,
+		 "defense": 5,
+		 "power": 8,
+		 "fortitude": 5,
+		 "speed": 12,
+		 "growthHp": 1,
+		 "growthStrength": 1,
+		 "growthDefense": 1,
+		 "growthFortitude": 1,
+		 "growthPower": 1,
+		 "growthSpeed": 1,
+		 "visualDescription": "A tall cat standing on its hind legs, perpetually looking like it might fall down."
+	  },
+	  {
+		 "id": 7,
+		 "name": "PuddleDweller",
+		 "types": [
+			3,
+			0
+		 ],
+		 "hp": 12,
+		 "strength": 5,
+		 "defense": 8,
+		 "power": 7,
+		 "fortitude": 8,
+		 "speed": 7,
+		 "growthHp": 1,
+		 "growthStrength": 1,
+		 "growthDefense": 1,
+		 "growthFortitude": 1,
+		 "growthPower": 1,
+		 "growthSpeed": 1,
+		 "visualDescription": "A hand sticking up from a puddle on the ground, with an eye at it's center"
+	  },
+	  {
+		 "id": 8,
+		 "name": "BadEgg",
+		 "types": [
+			10,
+			0
+		 ],
+		 "hp": 8,
+		 "strength": 6,
+		 "defense": 7,
+		 "power": 9,
+		 "fortitude": 7,
+		 "speed": 4,
+		 "growthHp": 1,
+		 "growthStrength": 1,
+		 "growthDefense": 1,
+		 "growthFortitude": 1,
+		 "growthPower": 1,
+		 "growthSpeed": 1,
+		 "visualDescription": "A small rounded half-cracked egg with hairy tentacle legs coming out of it and a red eye peeking through."
+	  },
+	  {
+		 "id": 9,
+		 "name": "Geode",
+		 "types": [
+			7,
+			0
+		 ],
+		 "hp": 8,
+		 "strength": 9,
+		 "defense": 15,
+		 "power": 9,
+		 "fortitude": 6,
+		 "speed": 3,
+		 "growthHp": 2,
+		 "growthStrength": 3,
+		 "growthDefense": 2,
+		 "growthFortitude": 5,
+		 "growthPower": 3,
+		 "growthSpeed": 1
+	  },
+	  {
+		 "id": 10,
+		 "name": "TrollMask",
+		 "types": [
+			5,
+			6
+		 ],
+		 "hp": 12,
+		 "strength": 12,
+		 "defense": 6,
+		 "power": 9,
+		 "fortitude": 12,
+		 "speed": 9,
+		 "growthHp": 3,
+		 "growthStrength": 4,
+		 "growthDefense": 4,
+		 "growthFortitude": 2,
+		 "growthPower": 3,
+		 "growthSpeed": 3
+	  },
+	  {
+		 "id": 11,
+		 "name": "Genetis",
+		 "types": [
+			11,
+			0
+		 ],
+		 "hp": 16,
+		 "strength": 9,
+		 "defense": 15,
+		 "power": 6,
+		 "fortitude": 12,
+		 "speed": 6,
+		 "growthHp": 4,
+		 "growthStrength": 3,
+		 "growthDefense": 4,
+		 "growthFortitude": 5,
+		 "growthPower": 2,
+		 "growthSpeed": 2
+	  },
+	  {
+		 "id": 12,
+		 "name": "CoalTroll",
+		 "types": [
+			14,
+			2
+		 ],
+		 "hp": 16,
+		 "strength": 7,
+		 "defense": 12,
+		 "power": 6,
+		 "fortitude": 9,
+		 "speed": 12,
+		 "growthHp": 4,
+		 "growthStrength": 2.5,
+		 "growthDefense": 3,
+		 "growthFortitude": 4,
+		 "growthPower": 2,
+		 "growthSpeed": 4
+	  },
+	  {
+		 "id": 13,
+		 "name": "FatBirb",
+		 "types": [
+			6,
+			0
+		 ],
+		 "hp": 12,
+		 "strength": 12,
+		 "defense": 0,
+		 "power": 2,
+		 "fortitude": 2,
+		 "speed": 12,
+		 "growthHp": 3,
+		 "growthStrength": 4.3,
+		 "growthDefense": 0.7,
+		 "growthFortitude": 0.2,
+		 "growthPower": 0.8,
+		 "growthSpeed": 4
+	  },
+	  {
+		 "id": 14,
+		 "name": "Foks",
+		 "types": [
+			6,
+			0
+		 ],
+		 "hp": 10,
+		 "strength": 6,
+		 "defense": 3,
+		 "power": 2,
+		 "fortitude": 3,
+		 "speed": 9,
+		 "growthHp": 2.5,
+		 "growthStrength": 2.2,
+		 "growthDefense": 1.1,
+		 "growthFortitude": 1.2,
+		 "growthPower": 0.7,
+		 "growthSpeed": 3
+	  },
+	  {
+		 "id": 15,
+		 "name": "HogCicle",
+		 "types": [
+			5,
+			0
+		 ],
+		 "hp": 6,
+		 "strength": 7,
+		 "defense": 12,
+		 "power": 5,
+		 "fortitude": 7,
+		 "speed": 15
+	  },
+	  {
+		 "id": 16,
+		 "name": "PengWeng",
+		 "types": [
+			5,
+			0
+		 ],
+		 "hp": 18,
+		 "strength": 6,
+		 "defense": 5,
+		 "power": 9,
+		 "fortitude": 6,
+		 "speed": 5
+	  },
+	  {
+		 "id": 17,
+		 "name": "SpeedBirb",
+		 "types": [
+			4,
+			0
+		 ],
+		 "hp": 9,
+		 "strength": 9,
+		 "defense": 4,
+		 "power": 4,
+		 "fortitude": 4,
+		 "speed": 9
+	  },
+	  {
+		 "id": 18,
+		 "name": "LightTroll",
+		 "types": [
+			10,
+			5
+		 ],
+		 "hp": 12,
+		 "strength": 7,
+		 "defense": 4,
+		 "power": 8,
+		 "fortitude": 3,
+		 "speed": 8
+	  }
+   ]
+}

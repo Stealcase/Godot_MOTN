@@ -1,0 +1,109 @@
+{
+    "description": "A container with all the different types that are in the game, as well as their weaknesses and resistances",
+    "types": [
+        {
+            "id": 0,
+            "name": "None",
+            "weakness": [],
+            "resistance": [],
+            "immune": [],
+            "description": "the None type. Empty for practical purposes."
+        },
+        {
+            "id": 1,
+            "name": Atomic
+            "weakness": [2,9,7],
+            "resistance": [4,6],
+            "immune": [],
+            "description": "Most things are Nuclear now. Some leverage it more than others."
+        },
+        {
+            "id": 2,
+            "name": "Fire",
+            "weakness": [1,3,5],
+            "resistance": [2,4,10],
+            "immune": [],
+            "description": "Some monsters don't want to watch the world burn, but it's nice to light a fire every now and then."
+        },
+        {
+            "id": 3,
+            "name": "Water",
+            "weakness": [8,9,6,12],
+            "resistance": [2],
+            "immune": [],
+            "description": "The lifeblood of humanity long ago"
+        },
+        {
+            "id": 4,
+            "name": "Air",
+            "weakness": [8],
+            "resistance": [4],
+            "immune": [],
+            "description": "The emptyness that we breathe"
+         },
+        {
+            "id": 5,
+            "name": "Ice",
+            "weakness": [2,9],
+            "resistance": [4],
+            "immune": [],
+            "description": "A solid form of water. I wonder if you live there still"
+        },
+        {
+            "id": 6,
+            "name": "Plant",
+            "weakness": [2,9,12],
+            "resistance": [8,7],
+            "immune": [10],
+            "description": "Leveraging the growth of the natural world."
+         },
+        {
+            "id": 7,
+            "name": "Mineral",
+            "weakness": [5,3],
+            "resistance": [1,2,7,8],
+            "immune": [],
+            "description": "Hit a couple rocks together"
+        },
+        {
+            "id": 8,
+            "name": "Electric",
+            "weakness": [7],
+            "resistance": [],
+            "immune": [],
+            "description": "A good spark is all it takes."
+        },
+        {
+            "id": 9,
+            "name": "Acid",
+            "weakness": [],
+            "resistance": [10],
+            "immune": [],
+            "description": "Through chemical reactions will burn through anything."
+        },
+        {
+            "id": 10,
+            "name": "Light",
+            "weakness": [12],
+            "resistance": [11],
+            "immune": [],
+            "description": "Beings formed of light folded onto itself"
+        },
+        {
+            "id": 11,
+            "name": "Digital",
+            "weakness": [12],
+            "resistance": [10],
+            "immune": [1,2],
+            "description": "Remnants of the digital age, these ghosts are often incorporeal"
+        },
+        {
+            "id": 12,
+            "name": "Parasite",
+            "weakness": [11,10,7],
+            "resistance": [3,6],
+            "immune": [12],
+            "description": "Having no choice but to live off others"
+         }
+    ]
+}

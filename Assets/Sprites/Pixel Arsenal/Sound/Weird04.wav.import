@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://ca6msf5itmo01"
+path="res://.godot/imported/Weird04.wav-cf37a3254764acd8260c1dee0d1af26d.sample"
+
+[deps]
+
+source_file="res://Assets/Sprites/Pixel Arsenal/Sound/Weird04.wav"
+dest_files=["res://.godot/imported/Weird04.wav-cf37a3254764acd8260c1dee0d1af26d.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

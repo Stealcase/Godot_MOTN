@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://b2gmjksu1krd2"
+path="res://.godot/imported/LaserShotBig.wav-4d6c52451f28bf3553221287572a9dbd.sample"
+
+[deps]
+
+source_file="res://Assets/Sprites/Pixel Arsenal/Sound/LaserShotBig.wav"
+dest_files=["res://.godot/imported/LaserShotBig.wav-4d6c52451f28bf3553221287572a9dbd.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

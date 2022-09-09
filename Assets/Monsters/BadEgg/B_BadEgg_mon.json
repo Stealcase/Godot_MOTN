@@ -1,0 +1,97 @@
+{
+	"frames": [
+		{
+			"filename": "B_BadEgg_mon 0.aseprite",
+			"frame": {
+				"x": 0,
+				"y": 192,
+				"w": 64,
+				"h": 64
+			}
+		},
+		{
+			"filename": "B_BadEgg_mon 1.aseprite",
+			"frame": {
+				"x": 64,
+				"y": 192,
+				"w": 64,
+				"h": 64
+			}
+		},
+		{
+			"filename": "B_BadEgg_mon 2.aseprite",
+			"frame": {
+				"x": 128,
+				"y": 192,
+				"w": 64,
+				"h": 64
+			}
+		},
+		{
+			"filename": "B_BadEgg_mon 3.aseprite",
+			"frame": {
+				"x": 0,
+				"y": 128,
+				"w": 64,
+				"h": 64
+			}
+		},
+		{
+			"filename": "B_BadEgg_mon 4.aseprite",
+			"frame": {
+				"x": 64,
+				"y": 128,
+				"w": 64,
+				"h": 64
+			}
+		},
+		{
+			"filename": "B_BadEgg_mon 5.aseprite",
+			"frame": {
+				"x": 128,
+				"y": 128,
+				"w": 64,
+				"h": 64
+			}
+		},
+		{
+			"filename": "B_BadEgg_mon 6.aseprite",
+			"frame": {
+				"x": 0,
+				"y": 64,
+				"w": 64,
+				"h": 64
+			}
+		},
+		{
+			"filename": "B_BadEgg_mon 7.aseprite",
+			"frame": {
+				"x": 64,
+				"y": 64,
+				"w": 64,
+				"h": 64
+			}
+		}
+	],
+	"meta": {
+		"monsterGameFormat": true,
+		"app": "http://www.aseprite.org/",
+		"version": "1.2.27-x64",
+		"image": "B_BadEgg_mon.png",
+		"size": {
+			"x": 0,
+			"y": 0,
+			"w": 192,
+			"h": 192
+		},
+		"frameTags": [
+			{
+				"name": "Idle",
+				"from": 0,
+				"to": 7,
+				"direction": "forward",
+				"nextKey": ""
+			}
+		]
+	}
+}
