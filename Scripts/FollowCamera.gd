@@ -46,5 +46,5 @@ func _physics_process(delta):
 	whole_pixel_pos = actual_pos.round()
 	var sub_pixel_pos = whole_pixel_pos - actual_pos
 	global_position = whole_pixel_pos
-	smotCamContainer.material.set_shader_uniform("cam_offset", sub_pixel_pos)
+	smotCamContainer.material.set_shader_parameter("cam_offset", sub_pixel_pos)
 	player_last_pos = player.global_position

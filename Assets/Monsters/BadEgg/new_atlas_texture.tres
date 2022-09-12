@@ -1,0 +1,8 @@
+[gd_resource type="AtlasTexture" load_steps=2 format=3 uid="uid://cjhfqf0fcyge8"]
+
+[ext_resource type="Texture2D" uid="uid://idjuvq5fenci" path="res://Assets/Monsters/BadEgg/B_BadEgg_mon.png" id="1_n407n"]
+
+[resource]
+atlas = ExtResource("1_n407n")
+region = Rect2(52.9261, 38.0139, 0.405457, 10.9476)
+margin = Rect2(0.077, 0, 0, 0)

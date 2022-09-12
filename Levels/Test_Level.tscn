@@ -1,13 +1,15 @@
-[gd_scene load_steps=37 format=3 uid="uid://twl2dt6pw4nl"]
+[gd_scene load_steps=40 format=3 uid="uid://bwan7rqige74f"]
 
 [ext_resource type="Script" path="res://Levels/ActorMovement.gd" id="1_j2pg1"]
 [ext_resource type="Texture2D" uid="uid://ddkj58ann6pyd" path="res://Assets/Monsters/Human/O_Human_mon.png" id="1_vsngp"]
 [ext_resource type="Shader" path="res://Shaders/Test_Level.gdshader" id="1_wq6p2"]
+[ext_resource type="TileSet" uid="uid://bihxc2n0wqgw6" path="res://Assets/Sprites/UsedSheets/Outdoor Floor.tres" id="2_3d33m"]
 [ext_resource type="Script" path="res://Levels/AnimationController.gd" id="4_uae2i"]
 [ext_resource type="Script" path="res://Scripts/FollowCamera.gd" id="6_b7fjx"]
 [ext_resource type="Script" path="res://Scripts/FPSCounter.gd" id="7_ioykq"]
 [ext_resource type="Script" path="res://Scripts/Controls/PlayerInput.gd" id="7_lk3dn"]
-[ext_resource type="Script" path="res://Scripts/Core/MonsterLoader.gd" id="8_mq8e1"]
+[ext_resource type="Script" path="res://Core/MonsterLoader.gd" id="8_mq8e1"]
+[ext_resource type="PackedScene" uid="uid://cl5bvful5hi3r" path="res://Core/Manifest.tscn" id="9_320em"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_1mmds"]
 shader = ExtResource("1_wq6p2")
@@ -157,9 +159,13 @@ animations = [{
 [sub_resource type="LabelSettings" id="LabelSettings_ou8ma"]
 font_size = 32
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_gij0m"]
+
 [node name="Game" type="Node2D"]
 
 [node name="ViewPort_Scale&Size" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
 offset_left = -10.0
 offset_top = -10.0
 offset_right = -10.0
@@ -168,6 +174,7 @@ scale = Vector2(5, 5)
 
 [node name="SmoothCamContainer" type="SubViewportContainer" parent="ViewPort_Scale&Size"]
 material = SubResource("ShaderMaterial_1mmds")
+layout_mode = 0
 offset_right = 392.0
 offset_bottom = 224.0
 
@@ -181,7 +188,9 @@ render_target_update_mode = 4
 [node name="Player" type="Node2D" parent="ViewPort_Scale&Size/SmoothCamContainer/SubViewport"]
 
 [node name="TileMap" type="TileMap" parent="ViewPort_Scale&Size/SmoothCamContainer/SubViewport"]
+tile_set = ExtResource("2_3d33m")
 format = 2
+layer_0/tile_data = PackedInt32Array(393230, 131073, 4, 393229, 327681, 0, 327693, 327681, 0, 262157, 196609, 2, 262156, 65537, 4, 196620, 65537, 3, 262155, 131073, 3, 262154, 327681, 0, 196618, 1, 3, 196617, 327681, 0, 131081, 131073, 3, 65546, 327681, 2, 10, 327681, 2, -65525, 327681, 2, -65524, 196609, 2, 12, 131073, 3, 13, 196609, 2, 65550, 327681, 2, 65551, 196609, 2, 65552, 327681, 2, 131088, 65537, 3, 131087, 131073, 3, 131086, 1, 4, 131085, 327681, 2, 131084, 196609, 2, 65547, 196609, 2, 131083, 65537, 3, 196619, 65537, 3, 327694, 196609, 2, 131082, 131073, 4, 65545, 196609, 2, 65544, 65537, 1, 8, 196609, 2, 7, 327681, 2, 6, 196609, 2, 5, 327681, 2, 4, 196609, 2, 3, 327681, 2, 65539, 1, 3, 65538, 327681, 2, 65537, 327681, 0, 131073, 327681, 2, 196609, 131073, 4, 196608, 327681, 2, 262144, 1, 3, 327680, 65537, 3, 393215, 65537, 3, 393214, 65537, 1, 327679, 65537, 3, 196610, 65537, 1, 131075, 65537, 4, 131076, 1, 3, 131077, 1, 4, 65541, 131073, 3, 65542, 65537, 3, 65543, 65537, 3, 131080, 327681, 2, 196615, 196609, 2, 196614, 65537, 1, 196613, 131073, 3, 196612, 65537, 4, 196611, 1, 3, 262147, 65537, 4, 262146, 65537, 3, 262145, 131073, 4, 131078, 1, 3, 65540, 65537, 3, 131074, 131073, 3, 262148, 131073, 4, 262143, 327681, 2, 327678, 327681, 2, 327677, 327681, 0, 393213, 327681, 2, 393216, 65537, 4, 393217, 1, 3, 393218, 196609, 2, 458751, 65537, 3, 458749, 65537, 1, 458750, 65537, 1, 458748, 327681, 2, 327681, 1, 3, 458752, 1, 3, 458753, 65537, 3)
 
 [node name="PlayerChar" type="CharacterBody2D" parent="ViewPort_Scale&Size/SmoothCamContainer/SubViewport"]
 motion_mode = 1
@@ -215,6 +224,8 @@ smooth_speed = 4.0
 script = ExtResource("7_lk3dn")
 playerMovement = NodePath("../PlayerChar")
 
+[node name="Manifest" parent="ViewPort_Scale&Size/SmoothCamContainer/SubViewport" instance=ExtResource("9_320em")]
+
 [node name="Label" type="Label" parent="."]
 offset_right = 40.0
 offset_bottom = 23.0
@@ -224,3 +235,6 @@ script = ExtResource("7_ioykq")
 
 [node name="Node2D" type="Node2D" parent="."]
 script = ExtResource("8_mq8e1")
+
+[node name="AnimatedSprite2d" type="AnimatedSprite2D" parent="."]
+frames = SubResource("SpriteFrames_gij0m")

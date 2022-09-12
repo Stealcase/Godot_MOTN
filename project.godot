@@ -13,9 +13,27 @@ _global_script_classes=[{
 "class": &"Breed",
 "language": &"GDScript",
 "path": "res://Scripts/Data/Breed.gd"
+}, {
+"base": "Node",
+"class": &"MonsterImageHandler",
+"language": &"GDScript",
+"path": "res://Core/MonsterImageHandler.gd"
+}, {
+"base": "Node",
+"class": &"MonsterManifest",
+"language": &"GDScript",
+"path": "res://Core/MonsterManifest.gd"
+}, {
+"base": "Node",
+"class": &"MonsterTexture",
+"language": &"GDScript",
+"path": "res://Core/MonsterTexture.gd"
 }]
 _global_script_class_icons={
-"Breed": "res://icon.svg"
+"Breed": "res://icon.svg",
+"MonsterImageHandler": "",
+"MonsterManifest": "",
+"MonsterTexture": ""
 }
 
 [application]

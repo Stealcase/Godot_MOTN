@@ -70,9 +70,9 @@ func _physics_process(delta: float):
 
 
 
-func ChangeDirection(direct: Vector2):
+func ChangeDirection(direc: Vector2):
 	var dir = Directions.Up;
-	var angle = rad2deg(direct.angle()) #s- 90
+	var angle = rad_to_deg(direc.angle()) #s- 90
 
 	if angle >= -23 && angle <= 22:
 		dir = Directions.Right
