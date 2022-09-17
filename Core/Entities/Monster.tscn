@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://pj3kskxspytn"]
+
+[ext_resource type="Script" path="res://Levels/ActorMovement.gd" id="1_h6eci"]
+[ext_resource type="Script" path="res://Levels/AnimationController.gd" id="2_thsq1"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_1pntr"]
+radius = 6.0
+height = 16.0
+
+[node name="Monster" type="CharacterBody2D"]
+motion_mode = 1
+script = ExtResource("1_h6eci")
+
+[node name="CollisionShape2d" type="CollisionShape2D" parent="."]
+position = Vector2(0, -8)
+shape = SubResource("CapsuleShape2D_1pntr")
+
+[node name="O_Animator" type="AnimatedSprite2D" parent="."]
+script = ExtResource("2_thsq1")
+
+[node name="NavigationAgent2d" type="NavigationAgent2D" parent="."]

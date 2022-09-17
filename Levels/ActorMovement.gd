@@ -24,8 +24,7 @@ func receive_input(dir: Vector2, is_moving: bool):
 	_is_move_input = is_moving
 	ChangeDirection(direction)
 
-@onready
-var animator = $AnimatedSprite2D
+@onready var animator = $O_Animator
 
 func _physics_process(delta: float):
 	if not _is_move_input: return
