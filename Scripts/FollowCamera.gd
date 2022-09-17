@@ -1,7 +1,7 @@
 extends Camera2D
 
 @onready @export
-var player : CharacterBody2D = get_node("../PlayerChar")
+var player : CharacterBody2D 
 
 # Called when the node enters the scene tree for the first time.
 @onready @export 
