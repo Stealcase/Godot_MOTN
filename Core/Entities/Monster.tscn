@@ -1,21 +1,53 @@
-[gd_scene load_steps=4 format=3 uid="uid://pj3kskxspytn"]
+[gd_scene load_steps=9 format=3 uid="uid://c37y233hv3y5d"]
 
 [ext_resource type="Script" path="res://Levels/ActorMovement.gd" id="1_h6eci"]
 [ext_resource type="Script" path="res://Levels/AnimationController.gd" id="2_thsq1"]
+[ext_resource type="Script" path="res://addons/beehave/nodes/beehave_tree.gd" id="3_p7rfb"]
+[ext_resource type="Script" path="res://addons/beehave/nodes/composites/selector.gd" id="4_ylrkm"]
+[ext_resource type="Script" path="res://addons/beehave/nodes/leaves/condition.gd" id="5_gmcvl"]
+[ext_resource type="Script" path="res://addons/beehave/nodes/leaves/action.gd" id="6_soxp4"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_1pntr"]
-radius = 6.0
-height = 16.0
+radius = 4.0
+height = 12.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_lnn4t"]
 
 [node name="Monster" type="CharacterBody2D"]
+collision_layer = 2
+collision_mask = 3
 motion_mode = 1
 script = ExtResource("1_h6eci")
 
-[node name="CollisionShape2d" type="CollisionShape2D" parent="."]
-position = Vector2(0, -8)
+[node name="World_Colider" type="CollisionShape2D" parent="."]
+position = Vector2(0, -4)
+rotation = 1.5708
 shape = SubResource("CapsuleShape2D_1pntr")
 
 [node name="O_Animator" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -16)
 script = ExtResource("2_thsq1")
 
 [node name="NavigationAgent2d" type="NavigationAgent2D" parent="."]
+
+[node name="Stats" type="Node" parent="."]
+
+[node name="Hurtbox" type="Area2D" parent="."]
+collision_layer = 4
+input_pickable = false
+
+[node name="CollisionShape2d" type="CollisionShape2D" parent="Hurtbox"]
+position = Vector2(0, -10)
+shape = SubResource("CircleShape2D_lnn4t")
+
+[node name="BeehaveTree" type="Node" parent="."]
+script = ExtResource("3_p7rfb")
+
+[node name="Either" type="Node" parent="BeehaveTree"]
+script = ExtResource("4_ylrkm")
+
+[node name="ConditionLeaf" type="Node" parent="BeehaveTree/Either"]
+script = ExtResource("5_gmcvl")
+
+[node name="ActionLeaf" type="Node" parent="BeehaveTree/Either/ConditionLeaf"]
+script = ExtResource("6_soxp4")

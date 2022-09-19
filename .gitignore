@@ -10,3 +10,5 @@ export_presets.cfg
 .godot/uid_cache.bin
 # Mono-specific ignores
 .mono/
+
+addons/beehave/

@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://bnbi33pbqgtdo"]
+
+[ext_resource type="Script" path="res://Core/Input/PlayerInput.gd" id="1_ca2ve"]
+
+[node name="PlayerInput" type="Node" node_paths=PackedStringArray("playerMovement")]
+script = ExtResource("1_ca2ve")
+playerMovement = NodePath("../ViewPort_Scale&Size/SmoothCamContainer/SubViewport/PlayerChar")

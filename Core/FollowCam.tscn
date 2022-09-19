@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://bmsau7g3p2qsy"]
+
+[ext_resource type="Script" path="res://Core/FollowCamera.gd" id="1_ngyfd"]
+
+[node name="Camera2D" type="Camera2D"]
+current = true
+drag_left_margin = 0.08
+drag_top_margin = 0.22
+drag_right_margin = 0.08
+drag_bottom_margin = 0.22
+editor_draw_limits = true
+editor_draw_drag_margin = true
+script = ExtResource("1_ngyfd")
+smooth_speed = 4.0

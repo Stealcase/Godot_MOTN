@@ -1,7 +1,7 @@
 extends Node
 class_name MonsterTexture
 
-var id : String
+var id : int
 var mon_name : String
 var o_mon : MonsterImageHandler
 var b_mon : MonsterImageHandler

@@ -50,6 +50,7 @@ func load_local_manifest(breeds : Array):
 		monTex.mon_name = breed["name"]
 		monTex.b_mon = _load_monster(breed["name"], ImageType.Battle)
 		monTex.o_mon = _load_monster(breed["name"], ImageType.Overworld)
+		monTex.id = breed.id
 		print(breed["name"])
 		monTex.generate_animations()
 		manifest.append(monTex)
