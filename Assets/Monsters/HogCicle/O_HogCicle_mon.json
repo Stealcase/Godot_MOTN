@@ -1,26 +1,22 @@
-{
-    "frames": [
-        {
-            "filename": "O_HogCicle_mon.aseprite",
-            "frame": {
-                "x": 0,
-                "y": 16,
-                "w": 16,
-                "h": 16
-            }
-        }
-    ],
-    "meta": {
-        "monsterGameFormat": true,
-        "app": "http://www.aseprite.org/",
-        "version": "1.2.27-x64",
-        "image": "O_HogCicle_mon.png",
-        "size": {
-            "x": 0,
-            "y": 0,
-            "w": 16,
-            "h": 16
-        },
-        "frameTags": []
-    }
+{ "frames": [
+   {
+    "filename": "O_HogCicle_mon.aseprite",
+    "frame": { "x": 0, "y": 0, "w": 16, "h": 16 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 16, "h": 16 },
+    "sourceSize": { "w": 16, "h": 16 },
+    "duration": 100
+   }
+ ],
+ "meta": {
+  "app": "https://www.aseprite.org/",
+  "version": "1.3-beta21-x64",
+  "image": "O_HogCicle_mon.png",
+  "format": "RGBA8888",
+  "size": { "w": 16, "h": 16 },
+  "scale": "1",
+  "frameTags": [
+  ]
+ }
 }

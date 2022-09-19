@@ -1,53 +1,49 @@
-{
-    "frames": [
-        {
-            "filename": "B_FatBirb_mon 0.aseprite",
-            "frame": {
-                "x": 0,
-                "y": 112,
-                "w": 56,
-                "h": 56
-            }
-        },
-        {
-            "filename": "B_FatBirb_mon 1.aseprite",
-            "frame": {
-                "x": 56,
-                "y": 112,
-                "w": 56,
-                "h": 56
-            }
-        },
-        {
-            "filename": "B_FatBirb_mon 2.aseprite",
-            "frame": {
-                "x": 0,
-                "y": 56,
-                "w": 56,
-                "h": 56
-            }
-        },
-        {
-            "filename": "B_FatBirb_mon 3.aseprite",
-            "frame": {
-                "x": 56,
-                "y": 56,
-                "w": 56,
-                "h": 56
-            }
-        }
-    ],
-    "meta": {
-        "monsterGameFormat": true,
-        "app": "http://www.aseprite.org/",
-        "version": "1.2.27-x64",
-        "image": "B_FatBirb_mon.png",
-        "size": {
-            "x": 0,
-            "y": 0,
-            "w": 112,
-            "h": 112
-        },
-        "frameTags": []
-    }
+{ "frames": [
+   {
+    "filename": "B_FatBirb_mon 0.aseprite",
+    "frame": { "x": 0, "y": 0, "w": 56, "h": 56 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 56, "h": 56 },
+    "sourceSize": { "w": 56, "h": 56 },
+    "duration": 100
+   },
+   {
+    "filename": "B_FatBirb_mon 1.aseprite",
+    "frame": { "x": 56, "y": 0, "w": 56, "h": 56 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 56, "h": 56 },
+    "sourceSize": { "w": 56, "h": 56 },
+    "duration": 100
+   },
+   {
+    "filename": "B_FatBirb_mon 2.aseprite",
+    "frame": { "x": 0, "y": 56, "w": 56, "h": 56 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 56, "h": 56 },
+    "sourceSize": { "w": 56, "h": 56 },
+    "duration": 100
+   },
+   {
+    "filename": "B_FatBirb_mon 3.aseprite",
+    "frame": { "x": 56, "y": 56, "w": 56, "h": 56 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 56, "h": 56 },
+    "sourceSize": { "w": 56, "h": 56 },
+    "duration": 100
+   }
+ ],
+ "meta": {
+  "app": "https://www.aseprite.org/",
+  "version": "1.3-beta21-x64",
+  "image": "B_FatBirb_mon.png",
+  "format": "RGBA8888",
+  "size": { "w": 112, "h": 112 },
+  "scale": "1",
+  "frameTags": [
+  ]
+ }
 }
