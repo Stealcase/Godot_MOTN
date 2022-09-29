@@ -1,0 +1,151 @@
+[gd_scene load_steps=6 format=3 uid="uid://cnwhkk43e8448"]
+
+[ext_resource type="Script" path="res://Modules/Roguelike/LoopManager.gd" id="1_wabw5"]
+[ext_resource type="Script" path="res://Core/MonsterManifest.gd" id="2_mxegr"]
+[ext_resource type="PackedScene" uid="uid://bk5ytyvgutpq7" path="res://Core/Battle/BattleVisualizer.tscn" id="3_7tu2y"]
+[ext_resource type="Theme" uid="uid://dcbtbr3cg7ssc" path="res://Assets/sci-fi-godot-theme/sci-fi-theme.tres" id="4_y4m0n"]
+[ext_resource type="PackedScene" uid="uid://blfskaaahb8p5" path="res://Core/UI/BattleHealthBar.tscn" id="5_t4vx4"]
+
+[node name="Main" type="Node2D"]
+
+[node name="LoopManager" type="Node" parent="."]
+script = ExtResource("1_wabw5")
+
+[node name="Manifest" type="Node" parent="LoopManager"]
+script = ExtResource("2_mxegr")
+
+[node name="Parties" type="Node" parent="LoopManager"]
+
+[node name="Battles" type="Node" parent="LoopManager"]
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(5, 5)
+
+[node name="SubViewport" type="SubViewport" parent="SubViewportContainer"]
+handle_input_locally = false
+size = Vector2i(384, 216)
+render_target_update_mode = 4
+
+[node name="BattleVisualizer" parent="SubViewportContainer/SubViewport" instance=ExtResource("3_7tu2y")]
+
+[node name="BattleUi" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 1920.0
+offset_bottom = 1080.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("4_y4m0n")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="BattleUi"]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -77.0
+offset_top = -86.0
+offset_right = 77.0
+grow_horizontal = 2
+grow_vertical = 0
+alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="BattleUi/HBoxContainer"]
+offset_right = 75.0
+offset_bottom = 86.0
+size_flags_vertical = 4
+
+[node name="Button" type="Button" parent="BattleUi/HBoxContainer/VBoxContainer"]
+offset_right = 75.0
+offset_bottom = 26.0
+text = "Attack"
+
+[node name="Button2" type="Button" parent="BattleUi/HBoxContainer/VBoxContainer"]
+offset_top = 30.0
+offset_right = 75.0
+offset_bottom = 56.0
+text = "Attack"
+
+[node name="Button3" type="Button" parent="BattleUi/HBoxContainer/VBoxContainer"]
+offset_top = 60.0
+offset_right = 75.0
+offset_bottom = 86.0
+text = "Attack"
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="BattleUi/HBoxContainer"]
+offset_left = 79.0
+offset_right = 154.0
+offset_bottom = 86.0
+
+[node name="Button" type="Button" parent="BattleUi/HBoxContainer/VBoxContainer2"]
+offset_right = 75.0
+offset_bottom = 26.0
+text = "Attack"
+
+[node name="Button2" type="Button" parent="BattleUi/HBoxContainer/VBoxContainer2"]
+offset_top = 30.0
+offset_right = 75.0
+offset_bottom = 56.0
+text = "Attack"
+
+[node name="Button3" type="Button" parent="BattleUi/HBoxContainer/VBoxContainer2"]
+offset_top = 60.0
+offset_right = 75.0
+offset_bottom = 86.0
+text = "Attack"
+
+[node name="AspectRatioContainer" type="AspectRatioContainer" parent="BattleUi"]
+offset_left = 64.0
+offset_top = 55.0
+offset_right = 1855.0
+offset_bottom = 1009.0
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="BattleUi"]
+offset_left = 108.0
+offset_top = 305.0
+offset_right = 1813.0
+offset_bottom = 759.0
+alignment = 1
+
+[node name="MarginContainer3" type="MarginContainer" parent="BattleUi/HBoxContainer2"]
+offset_right = 565.0
+offset_bottom = 454.0
+size_flags_horizontal = 3
+
+[node name="BattleHealthBar" parent="BattleUi/HBoxContainer2/MarginContainer3" instance=ExtResource("5_t4vx4")]
+custom_minimum_size = Vector2i(0, 20)
+offset_left = 132.0
+offset_top = 434.0
+offset_right = 432.0
+offset_bottom = 454.0
+grow_horizontal = 0
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+
+[node name="MarginContainer" type="MarginContainer" parent="BattleUi/HBoxContainer2"]
+offset_left = 569.0
+offset_right = 1135.0
+offset_bottom = 454.0
+size_flags_horizontal = 3
+
+[node name="MarginContainer2" type="MarginContainer" parent="BattleUi/HBoxContainer2"]
+offset_left = 1139.0
+offset_right = 1705.0
+offset_bottom = 454.0
+size_flags_horizontal = 3
+
+[node name="BattleHealthBar2" parent="BattleUi/HBoxContainer2/MarginContainer2" instance=ExtResource("5_t4vx4")]
+custom_minimum_size = Vector2i(0, 20)
+offset_left = 133.0
+offset_top = 434.0
+offset_right = 433.0
+offset_bottom = 454.0
+grow_horizontal = 0
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8

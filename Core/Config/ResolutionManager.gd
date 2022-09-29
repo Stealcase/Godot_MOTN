@@ -1,7 +1,7 @@
 extends Control
 
 @onready var viewport : Viewport = get_node("/root") 
-@onready var gameViewportScale : Control = get_node("/root/Game/GameViewportScale")
+@onready var gameViewportScale : Control = get_node("/root/Game/OverworldViewport")
 const game_size := Vector2i(320,180)
 
 
@@ -34,8 +34,8 @@ func _change_resolution(i: int):
 	gameViewportScale.scale.x = i
 	gameViewportScale.scale.y = i
 
-func _fullscreen():
-	OS
+#func _fullscreen():
+#	OS
 	
 func _on_button_pressed(extra_arg_0 : int):
 	_change_resolution(extra_arg_0)

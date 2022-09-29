@@ -1,11 +1,12 @@
 extends Camera2D
+class_name FollowCamera
 
 @onready @export var target : Node2D 
 var isSetup: bool = false
 # Called when the node enters the scene tree for the first time.
 @onready var GameNode : Node2D = get_node("/root/Game")
 
-@onready var smotCamContainer : SubViewportContainer = get_node("/root/Game/GameViewportScale/SmoothCamContainer")
+@onready var smotCamContainer : SubViewportContainer
 const game_size := Vector2(320,180)
 
 @onready var window_scale : int = int((GameNode.get_viewport_rect().size / game_size).x)
@@ -18,18 +19,15 @@ const game_size := Vector2(320,180)
 @export var smooth_speed: float
 @export var local_offset: Vector2
 
-func _ready():
-	
-	print(GameNode.get_viewport_rect().size)
-	print(window_scale)
 
-func set_target(new_target: Node2D) -> void:
+func define_cam_target(new_target: Node2D, container : SubViewportContainer) -> void:
+	smotCamContainer = container
 	target = new_target
 	isSetup = true
 
 func _physics_process(delta):
-	if not isSetup: 
-		pass
+	if not isSetup:
+		return
 	# Get the actual Position of the camera
 # Get where the mouse is
 	var local_mouse_pos = GameNode.get_local_mouse_position()
@@ -54,10 +52,10 @@ func _physics_process(delta):
 func _round_to_nearest_scaled_pixel(sub_pixel: float) -> float:
 	# The number might be negative, so we make it unsigned.
 	# Not necessary for native window scale, but we do this anyway for more readable code
-	var sub_pixel_pos = abs(sub_pixel)
-	var sign = 1
+	var sub_pixel_pos = absf(sub_pixel)
+	var sign = float(1)
 	if sub_pixel < 0:
-		sign = -1
+		sign = float(-1)
 	match window_scale:
 		1: #320x180, Native resolution, no sub-pixel camera movement
 			return 0.0 
@@ -84,6 +82,26 @@ func _round_to_nearest_scaled_pixel(sub_pixel: float) -> float:
 			if sub_pixel_pos < 0.4375:
 				return 0.375 * sign
 			return 0.5 * sign
+		5:
+			if sub_pixel_pos < 0.0625:
+				return 0.0
+			if sub_pixel_pos < 0.1875:
+				return 0.125 * sign
+			if sub_pixel_pos < 0.3125:
+				return 0.25 * sign
+			if sub_pixel_pos < 0.4375:
+				return 0.375 * sign
+			return 0.5 * sign
+		6:
+			if sub_pixel_pos < 0.0625:
+				return 0.0
+			if sub_pixel_pos < 0.1875:
+				return 0.125 * sign
+			if sub_pixel_pos < 0.3125:
+				return 0.25 * sign
+			if sub_pixel_pos < 0.4375:
+				return 0.375 * sign
+			return 0.5 * sign
 #			if sub_pixel_pos < 0.125:
 #				return 0.0
 #			if sub_pixel_pos < 0.375:
@@ -92,9 +110,6 @@ func _round_to_nearest_scaled_pixel(sub_pixel: float) -> float:
 #				return 0.5 * sign
 #			if sub_pixel_pos < 0.875:
 #				return 0.75 * sign
-	if window_scale == 1:
-		return 0.0 #Exit early, we are playing on base resolution 320x180
-
 
 	# There's a smarter way to do this, but this works
 	var sub_pixel_size_1 = 1 / window_scale

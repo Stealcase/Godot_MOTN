@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://blfskaaahb8p5"]
+
+[ext_resource type="Theme" uid="uid://dcbtbr3cg7ssc" path="res://Assets/sci-fi-godot-theme/sci-fi-theme.tres" id="1_uajhc"]
+[ext_resource type="Texture2D" uid="uid://c0jcxehk8osyf" path="res://Assets/Sprites/HpBarTileable 1.png" id="3_efjof"]
+[ext_resource type="Texture2D" uid="uid://c4yfoehlfxivo" path="res://Assets/Sprites/HPbarFill.png" id="4_riil2"]
+
+[node name="BattleHealthBar" type="HBoxContainer"]
+offset_right = 53.0
+offset_bottom = 9.0
+theme = ExtResource("1_uajhc")
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="."]
+custom_minimum_size = Vector2i(300, 4)
+offset_right = 300.0
+offset_bottom = 9.0
+value = 80.0
+nine_patch_stretch = true
+stretch_margin_left = 2
+stretch_margin_top = 2
+stretch_margin_right = 2
+stretch_margin_bottom = 2
+texture_under = ExtResource("3_efjof")
+texture_progress = ExtResource("4_riil2")
+texture_progress_offset = Vector2(3, 0)

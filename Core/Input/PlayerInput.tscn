@@ -1,7 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://bnbi33pbqgtdo"]
+[gd_scene load_steps=2 format=3 uid="uid://c6qdjacuqtpfg"]
 
-[ext_resource type="Script" path="res://Core/Input/PlayerInput.gd" id="1_ca2ve"]
+[ext_resource type="Script" path="res://Core/Input/PlayerBrain.gd" id="1_g0p2g"]
 
-[node name="PlayerInput" type="Node" node_paths=PackedStringArray("playerMovement")]
-script = ExtResource("1_ca2ve")
-playerMovement = NodePath("../ViewPort_Scale&Size/SmoothCamContainer/SubViewport/PlayerChar")
+[node name="PlayerInput" type="Node"]
+script = ExtResource("1_g0p2g")

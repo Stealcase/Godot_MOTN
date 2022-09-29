@@ -1,5 +1,32 @@
 extends CharacterBody2D
 
+class_name Movement
+
+
+@onready var actor : Actor = $Actor
+enum Directions {
+	Right,
+	Left,
+	Up,
+	Down,
+	UpRight,
+	DownRight,
+	DownLeft,
+	UpLeft
+	}
+var directionKeys = [
+	"Right",
+	"Left",
+	"Up",
+	"Down",
+	"UpRight",
+	"DownRight",
+	"DownLeft",
+	"UpLeft"
+	]
+
+var facing : Directions
+
 
 # Get the gravity from the project settings to be synced with RigidDynamicBody nodes.
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
@@ -11,20 +38,17 @@ var _step_size: float = 1 / _pixels_per_second
 
 # Count movement progress in distinct integer steps
 var _pixels_moved: int = 0
-
-
+var direction = Vector2.ZERO
+var _is_move_input: bool = false
 # Accumulator of deltas, aka fractions of seconds, to time movement. 
 var _step: float = 0 
 
-var direction = Vector2.ZERO
-var _is_move_input: bool = false
+
 
 func receive_input(dir: Vector2, is_moving: bool):
 	direction = dir
 	_is_move_input = is_moving
-	ChangeDirection(direction)
-
-@onready var animator = $O_Animator
+	change_direction(direction)
 
 func _physics_process(delta: float):
 	if not _is_move_input: return
@@ -39,7 +63,7 @@ func _physics_process(delta: float):
 	velocity = direction * _pixels_per_second
 	if move_and_slide(): #If collision
 		#Do thing if collided
-		print("Collision")
+		var collided = true # TODO: Delete this
 
 	
 	var current_pos = global_position
@@ -53,23 +77,8 @@ func _physics_process(delta: float):
 		_step = 0
 		_pixels_moved = 0
 
-	#velocity.y = move_toward(velocity.y, 0, SPEED)
 
-
-#func _unhandled_input(event: InputEvent) -> void:
-#	var input_vector = Vector2.ZERO 
-#
-#	input_vector.y += event.get_action_strength("move_down")
-#	input_vector.y -= event.get_action_strength("move_up")
-#	input_vector.x += event.get_action_strength("move_right")
-#	input_vector.x -= event.get_action_strength("move_left")
-#	#if input_vector != Vector2.ZERO:
-#		#input_vector = input_vector.normalized()
-#	direction = input_vector
-
-
-
-func ChangeDirection(direc: Vector2):
+func change_direction(direc: Vector2) -> void:
 	var dir = Directions.Up;
 	var angle = rad_to_deg(direc.angle()) #s- 90
 
@@ -92,28 +101,17 @@ func ChangeDirection(direc: Vector2):
 		dir = Directions.UpLeft
 	if (dir != facing):
 		facing = dir
-		animator.play(directionKeys[facing])
-	
-#	owner.ChangeFacing(facing);
-	
-enum Directions {
-	Right,
-	Left,
-	Up,
-	Down,
-	UpRight,
-	DownRight,
-	DownLeft,
-	UpLeft
-	}
-var directionKeys = [	
-	"Right",
-	"Left",
-	"Up",
-	"Down",
-	"UpRight",
-	"DownRight",
-	"DownLeft",
-	"UpLeft"
-	]
-var facing : Directions
+		actor.o_animator.play(directionKeys[facing])
+
+
+func _on_hurtbox_area_entered(area : Area2D):
+	print("Collided")
+	var other_collision = area.get_parent()
+	if other_collision.actor.party != actor.party:
+		enter_battle.emit(self,other_collision)
+		#	var nodes_in_group = get_tree().get_nodes_in_group(party_name)
+#	if other_collision in nodes_in_group:
+#		print("Collided with other party member")
+#		pass
+#	else:
+signal enter_battle(self_actor, other_actor)

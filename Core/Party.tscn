@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cc0lruoihj6m7"]
+
+[ext_resource type="Script" path="res://Core/Party.gd" id="1_lqwvg"]
+
+[node name="Party" type="Node"]
+script = ExtResource("1_lqwvg")

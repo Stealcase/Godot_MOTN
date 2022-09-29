@@ -1,6 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://bmsau7g3p2qsy"]
+[gd_scene load_steps=2 format=3 uid="uid://dh8vajfnmmd2f"]
 
-[ext_resource type="Script" path="res://Core/FollowCamera.gd" id="1_ngyfd"]
+[ext_resource type="Script" path="res://Modules/Overworld/Camera/FollowCamera.gd" id="1_gtdof"]
 
 [node name="Camera2D" type="Camera2D"]
 current = true
@@ -10,5 +10,5 @@ drag_right_margin = 0.08
 drag_bottom_margin = 0.22
 editor_draw_limits = true
 editor_draw_drag_margin = true
-script = ExtResource("1_ngyfd")
+script = ExtResource("1_gtdof")
 smooth_speed = 4.0

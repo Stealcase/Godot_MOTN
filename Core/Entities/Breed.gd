@@ -1,24 +1,31 @@
+extends RefCounted
 class_name Breed
 
-extends Node
 
 # (optional) icon to show in the editor dialogs:
 @icon("res://icon.svg")
 
 
 var id : int 
-var breed_name : String
+var name : String
 var codex_description : String
-var hp :  int 
-var strength :  int 
-var defense :  int 
-var power :  int 
-var fortitude :  int 
-var speed :  int 
-var leveling_tier :  int 
-var xpGain : int 
-var types : Array[int] #int array
+var stats : Stats
+#var leveling_tier :  int  #TODO: Implement in data
+#var xpGain : int  # TODO: Implement in data
+var types : Array[int] #int array #TODO: Get actions from breeds
 var actions :  Array[int]
+
+var visual_description : String
 
 #var col = Color.white :  Color 
 #var  Rules :  Rule[]
+
+func _init(breed : Dictionary):
+	id = breed["id"]
+	name = breed["name"]
+	visual_description = breed["visualDescription"]
+	stats = Stats.new(breed)
+#	leveling_tier = breed["leveling_tier"]
+#	xpGain = breed["xpGain"]
+	types = breed["types"]
+#	actions = breed["actions"] #TODO: Actions arent gotten from Breed yet

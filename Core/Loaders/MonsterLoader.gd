@@ -1,4 +1,6 @@
-extends Node
+extends IMonsterLoader
+
+class_name LocalMonsterLoader
 
 enum ImageType {
 	Overworld,
@@ -42,9 +44,8 @@ func _load_monster(monsterName: String, imgType : ImageType) -> MonsterImageHand
 	res.generate_frames()
 	return res
 
-	
-func load_local_manifest(breeds : Array):
-	var manifest = []
+func load_sprite_data(breeds : Array[Breed]) -> Array[MonsterTexture]:
+	var sprite_data : Array[MonsterTexture] = []
 	for breed in breeds:
 		var monTex = MonsterTexture.new()
 		monTex.mon_name = breed["name"]
@@ -53,17 +54,27 @@ func load_local_manifest(breeds : Array):
 		monTex.id = breed.id
 		print(breed["name"])
 		monTex.generate_animations()
-		manifest.append(monTex)
-	return manifest
+		sprite_data.append(monTex)
+	return sprite_data
 		
 		
-func load_local_breed_data():
-	return load_json_from_data_folder("BreedData.json")["breeds"]
+func load_breed_data() -> Array[Breed]:
+	var breed_array : Array[Breed] = []
+	var json_dict = load_json_from_data_folder("BreedData.json")
+	for breed in json_dict["breeds"]:
+		breed_array.append(Breed.new(breed))
+	return breed_array
 	
-func load_local_types():
-	var typeData = load_json_from_data_folder("TypeData.json")["types"]
+func load_type_data() -> Array[ElementalType]:
+	var typeData : Array[ElementalType] = []
+	var json_dict = load_json_from_data_folder("TypeData.json")
+	for type_data in json_dict["types"]:
+		typeData.append(ElementalType.new(type_data))
 	return typeData
 
-func load_local_moves():
-	var typeData = load_json_from_data_folder("MoveData.json")["actions"]
-	return typeData
+func load_action_data(types : Array[ElementalType]) -> Array[Action]:
+	var action_data : Array[Action] = []
+	var json_dict = load_json_from_data_folder("MoveData.json")
+	for action in json_dict["actions"]:
+		action_data.append(Action.new(action, types))
+	return action_data

@@ -1,0 +1,51 @@
+[gd_scene load_steps=5 format=3 uid="uid://baqtxnvn7onli"]
+
+[ext_resource type="Script" path="res://Modules/Overworld/Entities/Movement.gd" id="1_85mgy"]
+[ext_resource type="PackedScene" uid="uid://dx7oftilm7inh" path="res://Core/Entities/Actor.tscn" id="2_qmwtg"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_1pntr"]
+radius = 4.0
+height = 12.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_lnn4t"]
+
+[node name="Movement" type="CharacterBody2D"]
+collision_layer = 2
+collision_mask = 3
+motion_mode = 1
+script = ExtResource("1_85mgy")
+
+[node name="Actor" parent="." instance=ExtResource("2_qmwtg")]
+
+[node name="World_Colider" type="CollisionShape2D" parent="."]
+position = Vector2(0, -4)
+rotation = 1.5708
+shape = SubResource("CapsuleShape2D_1pntr")
+
+[node name="NavigationAgent2d" type="NavigationAgent2D" parent="."]
+
+[node name="Hurtbox" type="Area2D" parent="."]
+editor_description = "Getting hit by something in the world"
+collision_layer = 4
+collision_mask = 4
+input_pickable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hurtbox"]
+editor_description = "The shape we want to use for start battle collision detection and getting attacked
+"
+position = Vector2(0, -10)
+shape = SubResource("CircleShape2D_lnn4t")
+
+[node name="Hitbox" type="Area2D" parent="."]
+editor_description = "Hitting something in the world"
+collision_layer = 0
+collision_mask = 4
+input_pickable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hitbox"]
+editor_description = "The shape we want to use for start battle collision detection and getting attacked
+"
+position = Vector2(0, -10)
+shape = SubResource("CircleShape2D_lnn4t")
+
+[connection signal="area_entered" from="Hurtbox" to="." method="_on_hurtbox_area_entered"]

@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://cn8mlkrfxjn5y"]
+
+[ext_resource type="Script" path="res://Core/Battle/BattlerProxy.gd" id="1_kd77v"]
+[ext_resource type="SpriteFrames" uid="uid://ci2b4fkvc8hux" path="res://Assets/Monsters/Human/Human_O_SpriteFrames.tres" id="1_rdk6j"]
+[ext_resource type="Script" path="res://Core/Battle/BattlerProxyAnim.gd" id="3_di1mg"]
+
+[node name="BattlerProxy" type="Node2D"]
+script = ExtResource("1_kd77v")
+
+[node name="Proxy_Anim" type="AnimatedSprite2D" parent="."]
+frames = ExtResource("1_rdk6j")
+animation = &"DownRight"
+playing = true
+script = ExtResource("3_di1mg")

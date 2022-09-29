@@ -1,0 +1,35 @@
+[gd_scene load_steps=5 format=3 uid="uid://b1pbac1ks2gms"]
+
+[ext_resource type="Script" path="res://Modules/Overworld/Camera/PixelartViewport.gd" id="1_6o1xb"]
+[ext_resource type="Shader" path="res://Shaders/Test_Level.gdshader" id="2_l7opu"]
+[ext_resource type="PackedScene" uid="uid://dh8vajfnmmd2f" path="res://Modules/Overworld/Camera/FollowCam.tscn" id="3_unltn"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_1mmds"]
+shader = ExtResource("2_l7opu")
+shader_parameter/cam_offset = Vector2(1.031, 0)
+
+[node name="PlayerOverworldViewport" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -8.0
+offset_top = -8.0
+offset_right = -8.0
+offset_bottom = -8.0
+scale = Vector2(6, 6)
+script = ExtResource("1_6o1xb")
+
+[node name="SmoothCamContainer" type="SubViewportContainer" parent="."]
+material = SubResource("ShaderMaterial_1mmds")
+offset_right = 324.0
+offset_bottom = 184.0
+
+[node name="SubViewport" type="SubViewport" parent="SmoothCamContainer"]
+disable_3d = true
+handle_input_locally = false
+snap_2d_transforms_to_pixel = true
+canvas_item_default_texture_filter = 0
+gui_snap_controls_to_pixels = false
+size = Vector2i(324, 184)
+render_target_update_mode = 4
+
+[node name="Camera2D" parent="SmoothCamContainer/SubViewport" instance=ExtResource("3_unltn")]

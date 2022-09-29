@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://dx7oftilm7inh"]
+
+[ext_resource type="Script" path="res://Core/Actor.gd" id="1_rpnt1"]
+[ext_resource type="Script" path="res://Levels/AnimationController.gd" id="2_3h2wo"]
+[ext_resource type="Script" path="res://Core/Entities/StatsNode.gd" id="3_ragig"]
+
+[node name="Actor" type="Node2D"]
+script = ExtResource("1_rpnt1")
+
+[node name="O_Animator" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -16)
+script = ExtResource("2_3h2wo")
+
+[node name="B_Animator" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -16)
+script = ExtResource("2_3h2wo")
+
+[node name="Stats" type="Node" parent="."]
+script = ExtResource("3_ragig")

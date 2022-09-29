@@ -1,0 +1,37 @@
+[gd_scene load_steps=5 format=3 uid="uid://bk5ytyvgutpq7"]
+
+[ext_resource type="Script" path="res://Core/Battle/BattleVisualizer.gd" id="1_2duaa"]
+[ext_resource type="Texture2D" uid="uid://g1luomaa1wex" path="res://Assets/Sprites/UsedSheets/Battle_Sky.png" id="1_abu3a"]
+[ext_resource type="Texture2D" uid="uid://dxn3dfb5g3kgp" path="res://Assets/Sprites/UsedSheets/Battle_Floor.png" id="2_0mc8w"]
+[ext_resource type="Texture2D" uid="uid://b826jttem5jvb" path="res://Assets/Sprites/UsedSheets/Battle_Mountains.png" id="3_u6c4d"]
+
+[node name="BattleVisualizer" type="Node2D"]
+script = ExtResource("1_2duaa")
+
+[node name="Background" type="Node2D" parent="."]
+
+[node name="BattleSky" type="Sprite2D" parent="Background"]
+position = Vector2(192, 108)
+texture = ExtResource("1_abu3a")
+
+[node name="BattleMountains" type="Sprite2D" parent="Background"]
+position = Vector2(192, 108)
+texture = ExtResource("3_u6c4d")
+
+[node name="BattleFloor" type="Sprite2D" parent="Background"]
+position = Vector2(277, 129)
+texture = ExtResource("2_0mc8w")
+
+[node name="BattleFloor2" type="Sprite2D" parent="Background"]
+position = Vector2(64, 129)
+texture = ExtResource("2_0mc8w")
+
+[node name="Positions" type="Node2D" parent="."]
+
+[node name="Left_Pos" type="Node2D" parent="Positions"]
+position = Vector2(86, 93)
+
+[node name="Right_Pos" type="Node2D" parent="Positions"]
+position = Vector2(303, 94)
+
+[node name="Proxies" type="Node2D" parent="."]

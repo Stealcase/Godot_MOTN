@@ -9,6 +9,16 @@
 config_version=5
 
 _global_script_classes=[{
+"base": "Brain",
+"class": &"AIBrain",
+"language": &"GDScript",
+"path": "res://Core/Input/AIBrain.gd"
+}, {
+"base": "RefCounted",
+"class": &"Action",
+"language": &"GDScript",
+"path": "res://Core/Action.gd"
+}, {
 "base": "Leaf",
 "class": &"ActionLeaf",
 "language": &"GDScript",
@@ -24,10 +34,40 @@ _global_script_classes=[{
 "language": &"GDScript",
 "path": "res://addons/beehave/nodes/decorators/succeeder.gd"
 }, {
+"base": "AnimatedSprite2D",
+"class": &"AnimationController",
+"language": &"GDScript",
+"path": "res://Levels/AnimationController.gd"
+}, {
 "base": "Node",
 "class": &"BaseState",
 "language": &"GDScript",
 "path": "res://Core/StateMachine/BaseState.gd"
+}, {
+"base": "Node",
+"class": &"Battle",
+"language": &"GDScript",
+"path": "res://Core/Battle/Battle.gd"
+}, {
+"base": "RefCounted",
+"class": &"BattleSlot",
+"language": &"GDScript",
+"path": "res://Core/Battle/BattleSlot.gd"
+}, {
+"base": "Node2D",
+"class": &"BattleVisualizer",
+"language": &"GDScript",
+"path": "res://Core/Battle/BattleVisualizer.gd"
+}, {
+"base": "Node2D",
+"class": &"BattlerProxy",
+"language": &"GDScript",
+"path": "res://Core/Battle/BattlerProxy.gd"
+}, {
+"base": "AnimatedSprite2D",
+"class": &"BattlerProxyAnim",
+"language": &"GDScript",
+"path": "res://Core/Battle/BattlerProxyAnim.gd"
 }, {
 "base": "BeehaveTree",
 "class": &"BeehaveNode",
@@ -50,9 +90,19 @@ _global_script_classes=[{
 "path": "res://addons/beehave/blackboard.gd"
 }, {
 "base": "Node",
+"class": &"Brain",
+"language": &"GDScript",
+"path": "res://Core/Input/Brain.gd"
+}, {
+"base": "RefCounted",
 "class": &"Breed",
 "language": &"GDScript",
 "path": "res://Core/Entities/Breed.gd"
+}, {
+"base": "Node",
+"class": &"Calculator",
+"language": &"GDScript",
+"path": "res://Core/Calculator.gd"
 }, {
 "base": "BeehaveNode",
 "class": &"Composite",
@@ -69,6 +119,21 @@ _global_script_classes=[{
 "language": &"GDScript",
 "path": "res://addons/beehave/nodes/decorators/decorator.gd"
 }, {
+"base": "RefCounted",
+"class": &"ElementalType",
+"language": &"GDScript",
+"path": "res://Core/Entities/ElementalType.gd"
+}, {
+"base": "Camera2D",
+"class": &"FollowCamera",
+"language": &"GDScript",
+"path": "res://Modules/Overworld/Camera/FollowCamera.gd"
+}, {
+"base": "RefCounted",
+"class": &"IMonsterLoader",
+"language": &"GDScript",
+"path": "res://Core/Loaders/IMonsterLoader.gd"
+}, {
 "base": "Decorator",
 "class": &"InverterDecorator",
 "language": &"GDScript",
@@ -84,6 +149,11 @@ _global_script_classes=[{
 "language": &"GDScript",
 "path": "res://addons/beehave/nodes/decorators/limiter.gd"
 }, {
+"base": "IMonsterLoader",
+"class": &"LocalMonsterLoader",
+"language": &"GDScript",
+"path": "res://Core/Loaders/MonsterLoader.gd"
+}, {
 "base": "Node",
 "class": &"MonsterImageHandler",
 "language": &"GDScript",
@@ -98,6 +168,21 @@ _global_script_classes=[{
 "class": &"MonsterTexture",
 "language": &"GDScript",
 "path": "res://Core/MonsterTexture.gd"
+}, {
+"base": "CharacterBody2D",
+"class": &"Movement",
+"language": &"GDScript",
+"path": "res://Modules/Overworld/Entities/Movement.gd"
+}, {
+"base": "Node",
+"class": &"Party",
+"language": &"GDScript",
+"path": "res://Core/Party.gd"
+}, {
+"base": "Brain",
+"class": &"PlayerBrain",
+"language": &"GDScript",
+"path": "res://Core/Input/PlayerBrain.gd"
 }, {
 "base": "Composite",
 "class": &"SelectorComposite",
@@ -118,44 +203,84 @@ _global_script_classes=[{
 "class": &"SequenceStarComposite",
 "language": &"GDScript",
 "path": "res://addons/beehave/nodes/composites/sequence_star.gd"
+}, {
+"base": "RefCounted",
+"class": &"Stat",
+"language": &"GDScript",
+"path": "res://Core/Stat.gd"
+}, {
+"base": "Object",
+"class": &"StatModifier",
+"language": &"GDScript",
+"path": "res://Core/StatModifier.gd"
+}, {
+"base": "RefCounted",
+"class": &"Stats",
+"language": &"GDScript",
+"path": "res://Core/Entities/Stats.gd"
+}, {
+"base": "Node",
+"class": &"StatsNode",
+"language": &"GDScript",
+"path": "res://Core/Entities/StatsNode.gd"
 }]
 _global_script_class_icons={
+"AIBrain": "",
+"Action": "",
 "ActionLeaf": "res://addons/beehave/icons/action.svg",
 "AlwaysFailDecorator": "res://addons/beehave/icons/fail.svg",
 "AlwaysSucceedDecorator": "res://addons/beehave/icons/succeed.svg",
+"AnimationController": "",
 "BaseState": "",
+"Battle": "",
+"BattleSlot": "",
+"BattleVisualizer": "",
+"BattlerProxy": "",
+"BattlerProxyAnim": "",
 "BeehaveNode": "res://addons/beehave/icons/action.svg",
 "BeehaveRoot": "res://addons/beehave/icons/tree.svg",
 "BeehaveTree": "res://addons/beehave/icons/icon.svg",
 "Blackboard": "",
+"Brain": "",
 "Breed": "res://icon.svg",
+"Calculator": "",
 "Composite": "res://addons/beehave/icons/category_composite.svg",
 "ConditionLeaf": "res://addons/beehave/icons/condition.svg",
 "Decorator": "res://addons/beehave/icons/category_decorator.svg",
+"ElementalType": "",
+"FollowCamera": "",
+"IMonsterLoader": "",
 "InverterDecorator": "res://addons/beehave/icons/inverter.svg",
 "Leaf": "res://addons/beehave/icons/action.svg",
 "LimiterDecorator": "res://addons/beehave/icons/limiter.svg",
+"LocalMonsterLoader": "",
 "MonsterImageHandler": "",
 "MonsterManifest": "",
 "MonsterTexture": "",
+"Movement": "",
+"Party": "",
+"PlayerBrain": "",
 "SelectorComposite": "res://addons/beehave/icons/selector.svg",
 "SelectorStarComposite": "res://addons/beehave/icons/selector_star.svg",
 "SequenceComposite": "res://addons/beehave/icons/sequencer.svg",
-"SequenceStarComposite": "res://addons/beehave/icons/sequencer_star.svg"
+"SequenceStarComposite": "res://addons/beehave/icons/sequencer_star.svg",
+"Stat": "",
+"StatModifier": "",
+"Stats": "",
+"StatsNode": ""
 }
 
 [application]
 
 config/name="MOTN_Test"
-run/main_scene="res://Levels/Test_Level.tscn"
+run/main_scene="res://Modules/Roguelike/Main.tscn"
 config/features=PackedStringArray("4.0", "Vulkan Mobile")
 config/icon="res://icon.png"
 
 [display]
 
-window/size/viewport_width=1280
-window/size/viewport_height=720
-window/size/resizable=false
+window/size/viewport_width=1920
+window/size/viewport_height=1080
 
 [editor_plugins]
 

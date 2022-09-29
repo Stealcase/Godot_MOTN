@@ -1,10 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://cl5bvful5hi3r"]
+[gd_scene load_steps=2 format=3 uid="uid://cl5bvful5hi3r"]
 
 [ext_resource type="Script" path="res://Core/MonsterManifest.gd" id="1_xbwx1"]
-[ext_resource type="Script" path="res://Core/MonsterLoader.gd" id="2_p2f34"]
 
 [node name="Manifest" type="Node"]
 script = ExtResource("1_xbwx1")
-
-[node name="MonsterLoader" type="Node" parent="."]
-script = ExtResource("2_p2f34")

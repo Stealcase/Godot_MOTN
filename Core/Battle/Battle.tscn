@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://xd7xsrbvy8fh"]
+
+[ext_resource type="Script" path="res://Core/Battle/Battle.gd" id="1_gsku5"]
+[ext_resource type="Script" path="res://Core/SignalBus.gd" id="2_dulvn"]
+
+[node name="Battle" type="Node"]
+script = ExtResource("1_gsku5")
+
+[node name="SignalBus" type="Node" parent="."]
+script = ExtResource("2_dulvn")
