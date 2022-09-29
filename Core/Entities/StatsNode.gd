@@ -44,9 +44,9 @@ func _on_health_restored(old_val : int, new_val : int):
 
 func set_base_stats(breed : Breed) -> void:
 	stats = breed.stats
-	stats.base_hp.health_zero.connect(_on_health_zero)
-	stats.base_hp.health_restored.connect(_on_health_restored)
-	stats.base_hp.damage_taken.connect(_on_damage_changed)
+	stats.base_hp.reached_zero.connect(_on_health_zero)
+	stats.base_hp.increased.connect(_on_health_restored)
+	stats.base_hp.decreased.connect(_on_damage_changed)
 
 
 func take_damage(action : Action):

@@ -7,8 +7,8 @@ var StatModifiers : get = _get_modifiers
 var BaseValue
 
 signal reached_zero
-signal increased
-signal decreased
+signal increased(old_val : int, new_val : int)
+signal decreased(old_val : int, new_val : int)
 
 #Private values, do not modify outside of this!
 var _value : int
@@ -35,10 +35,10 @@ func _get_stat() -> int:
 		reached_zero.emit()
 		return _value
 	if last_value < _value:
-		increased.emit()
+		increased.emit(last_value, _value)
 		return _value
 	if last_value > _value:
-		decreased.emit()
+		decreased.emit(last_value, _value)
 		return _value
 	return _value
 	

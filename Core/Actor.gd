@@ -46,7 +46,7 @@ func set_state(state : ActorState) -> void:
 func _ready():
 	n_stats.died.connect(_on_death)
 	n_stats.damage_taken.connect(_on_damage_taken)
-	n_stats..connect(_on_damage_taken)
+	n_stats.health_restored.connect(_on_health_restored)
 	
 func _on_death():
 	set_state(ActorState.Dead)
